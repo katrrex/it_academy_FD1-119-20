@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .card_table{
+            height: 689px;
+            width: 1520px;
+            background: darkgreen;
+            overflow: hidden;
+        }
+
+        .field {
+            height: 587px;
+            width: 445px;
+            margin: 5% auto;
+        }
+
+        .first_column,
+        .second_column,
+        .third_column{
+            height: 582px;
+            width: 145px;
+        }
+
+        .first_column{
+            float: left;
+        }
+
+        .second_column{
+            float:right;
+        }
+
+        .third_column{
+            margin: 0% 34%;
+        }
+
+        .every_card{
+            height: 190px;
+            width: 141px;
+        }
+
+        #first_card,
+        #second_card,
+        #third_card,
+        #fourth_card,
+        #fifth_card,
+        #sixth_card,
+        #seventh_card,
+        #eighth_card,
+        #nineth_card{
+            background-image: url(img/cards2.png);
+        }
+
+        #first_card{
+            background-position: 573px 772px;
+        }
+
+        #second_card{
+            background-position: 285px 189px;
+        }
+
+        #third_card{
+            background-position: -1px -582px;
+        }
+
+        #fourth_card{
+            background-position: -432px 384px;
+        }
+
+        #fifth_card{
+            background-position: -144px 1160px;
+        }
+         
+        #sixth_card{
+            background-position: -1px 1354px;
+        }
+
+        #seventh_card{
+            background-position: 285px -194px;
+        }
+
+        #eighth_card{
+            background-position: -1px -777px;
+        }
+
+        #nineth_card{
+            background-position: 141px 0px;
+        }    
+        
+    </style>
+    <title>Cards</title>
+</head>
+<body>
+    <div class="card_table">
+        <div class="field">
+            <div class="first_column">
+                <div id="first_card" class="every_card"  style="overflow: scroll;">
+                    <img src="img/cards2.png" alt="first_card">
+                </div>
+                <div id="fourth_card" class="every_card"></div>
+                <div id="seventh_card" class="every_card"></div>
+            </div>
+            <div class="second_column">
+                <div id="second_card" class="every_card"></div>
+                <div id="fifth_card" class="every_card"></div>
+                <div id="eighth_card" class="every_card"></div>
+            </div>
+            <div class="third_column">
+                <div id="third_card" class="every_card"></div>
+                <div id="sixth_card" class="every_card"></div>
+                <div id="nineth_card" class="every_card"></div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
