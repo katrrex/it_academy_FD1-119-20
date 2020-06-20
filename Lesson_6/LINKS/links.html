@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div{
+            margin: 25px 0px 0px 0px;
+        }
+
+        a{
+            vertical-align: 50%;
+        }
+
+        .type_1 a,
+        .type_2 a,
+        .type_3 a,
+        .type_4 a,
+        .type_5 a,
+        .type_6 a,
+        .type_7 a,
+        .type_8 a,
+        .type_9 a,
+        .type_10 a,
+        .type_11 a,
+        .type_12 a,
+        .type_13 a{
+             color: green;
+             border-right: solid 2px red;
+             padding: 10px;
+        }
+
+        .type_1 a:hover,
+        .type_2 a:hover,
+        .type_3 a:hover,
+        .type_4 a:hover,
+        .type_5 a:hover,
+        .type_6 a:hover,
+        .type_7 a:hover,
+        .type_8 a:hover,
+        .type_9 a:hover,
+        .type_10 a:hover,
+        .type_11 a:hover,
+        .type_12 a:hover,
+        .type_13 a:hover{
+            color: red;
+        }        
+
+        .type_1 a:last-child{
+            border-right: 0px;
+        }
+
+        .type_2 a:last-of-type{
+            border-right: 0px;
+        }
+
+        .type_3 a:nth-child(5){
+            border-right: 0px;
+        }
+
+        .type_4 a:nth-child(0n+5){
+            border-right: 0px;
+        }
+
+        .type_5 a:nth-of-type(5){
+            border-right: 0px;
+        }
+
+        .type_6 a:nth-of-type(0n+5){
+            border-right: 0px;
+        }
+
+        a[href^="#5.7"]:last-child{
+            border-right: 0px;
+        }
+
+        a[href$="8.1"]:last-of-type{
+            border-right: 0px;
+        }
+
+        a[href*="9"]:nth-child(5){
+            border-right: 0px;
+        }
+
+        .type_10 a{
+            border-right: 0px;
+        }
+
+        .type_10 a:not([href*="5"])::after{
+            content: "|";
+        }
+
+        .type_11 a{
+            border-right: 0px;
+        }
+
+        .type_11 a:not([href*="5"])::after{
+            content: url(img/pic_001.png);
+        }
+
+        .type_12 a{
+            display: block;
+            border-right: 0px;
+        }
+            
+        .type_12 a:not([href*="5"])::after{
+            content: url(img/pic_001.png);
+        }
+
+        .type_12 a[href*="1"],
+        .type_12 a[href*="2"],
+        .type_12 a[href*="3"],
+        .type_12 a[href*="4"]
+        {
+            float: left;
+            margin-right: 10%;
+        }
+
+        [href*="5"]a .type_12 {
+            float: right;
+        }
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="type_1">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="#">пятая ссылка</a>
+    </div>
+    
+    <div class="type_2">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="#">пятая ссылка</a>
+    </div>
+
+    <div class="type_3">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="#">пятая ссылка</a>
+    </div>
+
+    <div class="type_4">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="#">пятая ссылка</a>
+    </div>
+
+    <div class="type_5">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="#">пятая ссылка</a>
+    </div>
+
+    <div class="type_6">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="#">пятая ссылка</a>
+    </div>
+
+    <div class="type_7">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="#5.7.1">пятая ссылка</a>
+    </div>
+
+    <div class="type_8">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="5.8.1">пятая ссылка</a>
+    </div>
+
+    <div class="type_9">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="5.9.1">пятая ссылка</a>
+    </div>
+
+    <div class="type_10">
+        <a href="1.10">первая ссылка</a>
+        <a href="2.10">вторая ссылка</a>
+        <a href="3.10">третья ссылка</a>
+        <a href="4.10">четвертая ссылка</a>
+        <a href="5.10">пятая ссылка</a>
+    </div>
+
+    <div class="type_11">
+        <a href="1.11">первая ссылка</a>
+        <a href="2.11">вторая ссылка</a>
+        <a href="3.11">третья ссылка</a>
+        <a href="4.11">четвертая ссылка</a>
+        <a href="5.11">пятая ссылка</a>
+    </div>
+
+    <div class="type_12">
+        <a href="1.12">первая ссылка</a>
+        <a href="2.12">вторая ссылка</a>
+        <a href="3.12">третья ссылка</a>
+        <a href="4.12">четвертая ссылка</a>
+        <a href="5.12">пятая ссылка</a>
+    </div>
+
+</body>
+</html>
