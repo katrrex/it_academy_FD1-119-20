@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'PFDinTextCompPro-Regular';
+  src: url('PFDinTextCompPro-Regular.eot');
+  src: url('PFDinTextCompPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('PFDinTextCompPro-Regular.svg#PFDinTextCompPro-Regular') format('svg'),
+       url('PFDinTextCompPro-Regular.ttf') format('truetype'),
+       url('PFDinTextCompPro-Regular.woff') format('woff'),
+       url('PFDinTextCompPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinTextCompPro-Bold';
+  src: url('PFDinTextCompPro-Bold.svg#PFDinTextCompPro-Bold') format('svg'),
+       url('PFDinTextCompPro-Bold.ttf') format('truetype'),
+       url('PFDinTextCompPro-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'z-PFDinTextCompPro-Bold';
+  src: url('z-PFDinTextCompPro-Bold.eot');
+  src: url('z-PFDinTextCompPro-Bold.eot?#iefix') format('embedded-opentype'),
+       url('z-PFDinTextCompPro-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

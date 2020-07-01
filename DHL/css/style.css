@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'MyriadPro-Regular';
+    font-size: 20px;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin-top: 188px;
+}
+
+.wrapper{
+}
+
+.header-top-back{
+    height: 50px;
+    background-color: #ba0000;
+}
+
+.header-top-contant{
+    height: 35px;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.language{
+    float: left;
+}
+
+.contact-profile{
+    float: right;
+}
+
+.header-top-contant p{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.contact-profile p:nth-child(1){
+    float: left;
+}
+
+.contact-profile p:nth-child(1)::before{ /*почему не работает картинка??*/
+   content: url("../img/icon_contact_center.png");
+}
+
+.contact-profile:nth-child(2) p{
+    float: left;
+    margin-left: 31px;
+}
+
+.header-menu-back{
+    height: 120px;
+    background-color: #ffcc00;
+}
+
+.header-menu-contant{
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-logo{
+    display: inline-block;
+    margin-top: 42px;
+    float: left;
+}
+
+.header-menu-contant ul{
+    display: inline-block;
+    list-style: none;
+    margin-top: 56px;
+    float: left;
+    margin-left: 187px;
+}
+
+.img-searcher{
+    display: inline-block;
+    margin-left: 184px;
+    margin-top: 26px;
+    float: left;
+}
+
+.header-menu-contant ul li{
+    display: inline-block;
+    height: 60px;
+    padding: solid 2px #ba0000; /*почему не применяется паддинг??? сделать его для ховер*/
+    margin-left: 35px;
+}
+
+.header-menu-contant ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color:  #ba0000;
+    float: left;
+}
+
+.main-back{
+    height: 800px;
+    background: url(../img/main-back.jpg) no-repeat;
+}
+
+.main-contant{
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-text-selection{
+    float: left;
+}
+
+.main-text-selection ul{
+    list-style: none;
+    margin-top: 117px;
+}
+
+.main-text-selection ul li{
+    display: inline-block;
+    color: #ffffff;
+}
+
+.main-menu p{
+        font-size: 20px;
+}
+
+.main-text-selection ul li:nth-child(2) p::before,
+.main-text-selection ul li:nth-child(2) p::after{
+    content: ".";
+    color: #ffcc00;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.two-btm{
+    margin-top: 45px;
+} 
+
+.btm-yellow{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    color: #ba0000;
+    background-color: #ffcc00;
+    border-radius: 25px;
+    float: left;
+    margin-right: 20px;
+}
+
+.btm-white-brdr{
+    width: 190px;
+    height: 46px;
+    font-size: 16px;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    border-radius: 25px;
+    float: left;
+}
+
+.btm-yellow span{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.btm-white-brdr span{
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 13px;
+}
+
+.services-back{
+    height: 735px;
+    background-color: #ffffff;
+}
+
+.services-contant{
+    height: 735px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.word-servis-back{
+    width: 600px;
+    height: 100px;
+    background: url(../img/word-service-back.png);
+    margin-top: 106px;
+}
+
+.word-servis-back h2{
+    font-family: 'MyriadPro-Bold';
+    font-size: 63px;
+    color: #ba0000;
+    float: left;
+    margin-top: 11px;
+}
+
+.services-items{
+    width: 1170px;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.item{
+    width: 270px;
+    height: 350px;
+    float: left;
+    margin-right: 30px;
+}
+
+.item h4{    
+    display: inline-block;
+    font-family: 'MyriadPro-Bold';
+    color: #ba0000;
+    margin-top: 15px;
+}
+
+.item p{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #929292;
+    margin-top: 10px;
+}
+
+.item span{
+    display: inline-block;
+    font-family: 'MyriadPro-Bold';
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.item span::after{
+    content: " " url("../img/arrow.png");
+}
+
+.location{
+    width: 270px;
+    height: 340px;
+    background-color: #ba0000;
+    float: left;
+}
+
+.loc-contant{
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+.location h4{
+    font-family: 'MyriadPro-Bold';
+    color: #ffffff;
+}
+
+.location img{
+    margin-top: 30px;
+}
+
+.location p{
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 22px;
+    margin-top: 30px;
+}
+
+.loc-btm{
+    margin-top: 90px;
+}
+
+.loc-btm span{
+    font-family: 'MyriadPro-Bold';
+    margin-left: 42px;
+    margin-top: 14px;
+
+}
+
+.services-second-back{
+    height: 702px;
+    background: url(../img/services-second-back.jpg) no-repeat;
+}
+
+.services-second-contant{
+    height: 702px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-second-contant h2{
+    display: inline-block;
+    font-family: 'MyriadPro-Bold';
+    font-size: 57px;
+    color: #ffffff;
+    margin-top: 155px;
+}
+
+.services-second-contant img{
+    display: inline-block;
+    margin-left: 540px;
+    margin-top: 63px;
+}
+
+.serv-sec-items-img{
+    height: 253px;
+    margin-top: 45px;
+}
+
+.serv-sec-items-img img{
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 64px;
+    margin-right: 10px;
+}
+
+.find-service-back{
+    height: 933px;
+    background-color: #ffffff;
+}
+
+.find-service-contant{
+    height: 933px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.items-info{
+    height: 212px;
+}
+
+.info-back{
+    width: 370px;
+    height: 212px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info-text{
+    margin-left: 30px;
+}
+
+.info-text h4{    
+    display: inline-block;
+    font-family: 'MyriadPro-Bold';
+    color: #ba0000;
+    margin-top: 30px;
+}
+
+.info-text ul{
+    list-style-image: url("../img/arrow-yellow.png");
+    margin-left: 13px;
+    margin-top: 30px;
+}
+
+.info-text ul li{
+    font-size: 14px;
+    line-height: 17px;
+    color: #929292;
+    margin-top: 10px;
+}
+
+.find-service-contant img{
+    margin-left: 700px;
+    margin-top: 95px;
+}
+
+.deliver-back{
+    height: 350px;
+    background-color: #ba0000;
+}
+
+.deliver-contant{
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deliver-text{
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.deliver-contant h3{
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+.deliver-contant p{
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.btm-red{
+    width: 150px;
+    height: 50px;
+    background-color: #a00000;
+    border-radius: 25px;
+    float: right;
+    margin-top: 150px;
+}
+
+.btm-red span{
+    display: inline-block;
+    font-family: 'MyriadPro-Bold';
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+.header-back{
+    height: 580px;
+    background: url("../img/footer-left-img.jpg") no-repeat left bottom,
+                url("../img/footer-right-img.jpg") no-repeat right bottom;
+}
+
+.header-contant{
+     height: 580px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.logo-friends-back{
+    width: 270px;
+    height: 130px;
+    background-color: #ffffff;
+    border: solid 2px #eedbdb;
+    margin-top: 70px;
+    float: left;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.logo-friends-back:hover{
+    border: solid 2px #ba0000;
+}
+
+.logo-friends-back img{
+    display: inline-block;
+    margin-left: 18px;
+    margin-top: 45px;
+}
+
+.info-about{
+    float: left;
+    margin-top: 125px;
+}
+
+.info-about.info-1{/*почему не марджинится??*/
+    margin-left: 240px;
+}
+
+.info-about.info-2{/*почему не марджинится??*/
+    margin-left: 45px;
+}
+
+.info-about.info-3{/*почему не марджинится??*/
+    margin-left: 90px;
+}
+
+.info-about h4{
+    font-size: 20px;
+    color: #ba0000;
+}
+
+.info-2 h4,
+.info-3 h4{ /*почему не деуствует жирный?*/
+    font-family: 'MyriadPro-Bold';
+    font-weight: bolder;
+}
+
+.info-about ul{
+    list-style-image: url("../img/arrow-yellow.png");
+    margin-left: 12px;
+    margin-top: 45px;
+}
+
+.info-about ul li p{
+    color: #777777;
+}
+
+.info-1 ul li:nth-child(1) p, /*почему не окрашивается??*/
+.info-2 ul li:nth-child(1) p{
+    color: #ffcc00;
+}
+
+.info-3 ul li:nth-child(1) p{ /*почему не окрашивается??*/
+   color: #017edf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
