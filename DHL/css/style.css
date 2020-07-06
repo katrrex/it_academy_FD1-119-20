@@ -8,35 +8,36 @@ body{
     font-size: 20px;
 }
 
-h1{
-    color: #ffffff;
-    font-size: 70px;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    margin-top: 188px;
+ .clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
 }
 
 .wrapper{
+    overflow: hidden;
 }
 
 .header-top-back{
-    height: 50px;
     background-color: #ba0000;
 }
 
 .header-top-contant{
-    height: 35px;
-    padding-top: 15px;
+    width: 1460px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .language{
     float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .contact-profile{
     float: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .header-top-contant p{
@@ -58,72 +59,74 @@ h1{
 }
 
 .header-menu-back{
-    height: 120px;
     background-color: #ffcc00;
 }
 
 .header-menu-contant{
-    height: 120px;
+    width: 1460px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img-logo{
+.main-contant h1{
     display: inline-block;
+    color: #ffffff;
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin-top: 188px;
+}
+
+.img-logo{
     margin-top: 42px;
     float: left;
 }
 
-.header-menu-contant ul{
+.menu-search{
+    float: right;
+}
+
+.top-menu{
     display: inline-block;
     list-style: none;
-    margin-top: 56px;
-    float: left;
-    margin-left: 187px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.img-searcher{
+.top-menu li{
     display: inline-block;
-    margin-left: 184px;
-    margin-top: 26px;
-    float: left;
-}
-
-.header-menu-contant ul li{
-    display: inline-block;
-    height: 60px;
-    padding: solid 2px #ba0000; /*почему не применяется паддинг??? сделать его для ховер*/
     margin-left: 35px;
 }
 
-.header-menu-contant ul li a{
+.top-menu li a{
     text-decoration: none;
     font-size: 14px;
     color:  #ba0000;
-    float: left;
+}
+
+.menu-search img{
+    display: inline-block;
+    float: right;
+    margin-left: 180px;
+    margin-top: 30px;
 }
 
 .main-back{
-    height: 800px;
-    background: url(../img/main-back.jpg) no-repeat;
+    background: url(../img/main-back.jpg) no-repeat center;
 }
 
 .main-contant{
-    height: 800px;
+    width: 1460px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 }
 
-.main-text-selection{
-    float: left;
-}
-
-.main-text-selection ul{
+.main-contant ul{
     list-style: none;
     margin-top: 117px;
 }
 
-.main-text-selection ul li{
+.main-contant ul li{
     display: inline-block;
     color: #ffffff;
 }
@@ -132,8 +135,8 @@ h1{
         font-size: 20px;
 }
 
-.main-text-selection ul li:nth-child(2) p::before,
-.main-text-selection ul li:nth-child(2) p::after{
+.main-contant ul li:nth-child(2) p::before,
+.main-contant ul li:nth-child(2) p::after{
     content: ".";
     color: #ffcc00;
     margin-left: 22px;
@@ -141,7 +144,10 @@ h1{
 }
 
 .two-btm{
+    width: 368px;
+    height: 50px;
     margin-top: 45px;
+    margin-bottom: 180px;
 } 
 
 .btm-yellow{
@@ -152,7 +158,6 @@ h1{
     background-color: #ffcc00;
     border-radius: 25px;
     float: left;
-    margin-right: 20px;
 }
 
 .btm-white-brdr{
@@ -162,7 +167,8 @@ h1{
     color: #ffffff;
     border: solid 2px #ffffff;
     border-radius: 25px;
-    float: left;
+    float: right;
+    margin-top: 1px;
 }
 
 .btm-yellow span{
@@ -183,15 +189,18 @@ h1{
 }
 
 .services-contant{
+    width: 1460px;
     height: 735px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .word-servis-back{
+    display: inline-block;
     width: 600px;
     height: 100px;
     background: url(../img/word-service-back.png);
+    margin-left: 107px;
     margin-top: 106px;
 }
 
@@ -204,16 +213,30 @@ h1{
 }
 
 .services-items{
-    width: 1170px;
-    height: 350px;
+    width: 1246px;
+    margin-left: auto;
     margin-top: 80px;
+    margin-right: auto;
 }
 
 .item{
     width: 270px;
-    height: 350px;
     float: left;
-    margin-right: 30px;
+}
+
+.item:nth-child(1){
+    margin-left: 0px;
+    margin-right: 50px;
+}
+
+.item:nth-child(2){
+    margin-left: 0;
+    margin-right: 50px;
+}
+
+.item:nth-child(3){
+    margin-left: 0;
+    margin-right: 50px;
 }
 
 .item h4{    
@@ -245,12 +268,12 @@ h1{
 
 .location{
     width: 270px;
-    height: 340px;
     background-color: #ba0000;
     float: left;
 }
 
 .loc-contant{
+    width: auto;
     margin-left: 32px;
     margin-top: 32px;
 }
@@ -273,6 +296,7 @@ h1{
 
 .loc-btm{
     margin-top: 90px;
+    margin-bottom: 30px;
 }
 
 .loc-btm span{
@@ -283,12 +307,11 @@ h1{
 }
 
 .services-second-back{
-    height: 702px;
-    background: url(../img/services-second-back.jpg) no-repeat;
+    background: url(../img/services-second-back.jpg) no-repeat center;
 }
 
 .services-second-contant{
-    height: 702px;
+    width: 1460px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -296,53 +319,78 @@ h1{
 .services-second-contant h2{
     display: inline-block;
     font-family: 'MyriadPro-Bold';
-    font-size: 57px;
+    font-size: 72px;
     color: #ffffff;
     margin-top: 155px;
 }
 
 .services-second-contant img{
-    display: inline-block;
-    margin-left: 540px;
+    display: block;
+    margin-left: auto;
     margin-top: 63px;
+    margin-right: auto;
 }
 
 .serv-sec-items-img{
-    height: 253px;
-    margin-top: 45px;
+    width: 1211px;
+    margin-left: auto;
+    margin-top: 98px;
+    margin-right: auto;
 }
 
 .serv-sec-items-img img{
-    display: inline-block;
     float: left;
-    margin-left: 10px;
-    margin-top: 64px;
-    margin-right: 10px;
+}
+
+.serv-sec-items-img img:nth-child(1){
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+.serv-sec-items-img img:nth-child(2){
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+.serv-sec-items-img img:nth-child(3){
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
 }
 
 .find-service-back{
-    height: 933px;
     background-color: #ffffff;
 }
 
 .find-service-contant{
-    height: 933px;
+    width: 1460px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .items-info{
-    height: 212px;
+    width: 1211px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-back{
     width: 370px;
-    height: 212px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     float: left;
-    margin-left: 10px;
-    margin-right: 10px;
+}
+
+.info-back:nth-child(1){
+    margin-right: 50px;
+    margin-left: 0;
+}
+
+.info-back:nth-child(2){
+    margin-right: 50px;
+    margin-left: 0;
 }
 
 .info-text{
@@ -360,6 +408,7 @@ h1{
     list-style-image: url("../img/arrow-yellow.png");
     margin-left: 13px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .info-text ul li{
@@ -370,17 +419,18 @@ h1{
 }
 
 .find-service-contant img{
-    margin-left: 700px;
+    float: right;
     margin-top: 95px;
+    margin-right: 30px;
+    margin-bottom: 100px;
 }
 
 .deliver-back{
-    height: 350px;
     background-color: #ba0000;
 }
 
 .deliver-contant{
-    height: 350px;
+    width: 1460px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -388,6 +438,7 @@ h1{
 .deliver-text{
     display: inline-block;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .deliver-contant h3{
@@ -419,27 +470,44 @@ h1{
     margin-top: 15px;
 }
 
-.header-back{
-    height: 580px;
+.footer-back{
     background: url("../img/footer-left-img.jpg") no-repeat left bottom,
                 url("../img/footer-right-img.jpg") no-repeat right bottom;
 }
 
-.header-contant{
-     height: 580px;
+.footer-contant{
+     width: 1460px;
      margin-left: auto;
      margin-right: auto;
 }
 
+.logo-friends-box{
+    width: 1168px;
+    margin-left: auto;
+    margin-top: 70px;
+    margin-right: auto;
+}
+
 .logo-friends-back{
     width: 270px;
-    height: 130px;
+    height: 125px;
     background-color: #ffffff;
     border: solid 2px #eedbdb;
-    margin-top: 70px;
     float: left;
-    margin-left: 9px;
+    margin-left: 0;
     margin-right: 9px;
+}
+
+.logo-friends-back:nth-child(1),
+.logo-friends-back:nth-child(2),
+.logo-friends-back:nth-child(3){
+   margin-left: 0;
+   margin-right: 24px;
+}
+
+.logo-friends-back:nth-child(4){
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .logo-friends-back:hover{
@@ -447,26 +515,26 @@ h1{
 }
 
 .logo-friends-back img{
-    display: inline-block;
     margin-left: 18px;
     margin-top: 45px;
 }
 
 .info-about{
     float: left;
-    margin-top: 125px;
+    margin-top: 127px;
+    margin-bottom: 55px;
 }
 
-.info-about.info-1{/*почему не марджинится??*/
-    margin-left: 240px;
+.info-about.info-1{
+    margin-left: 300px;
 }
 
-.info-about.info-2{/*почему не марджинится??*/
-    margin-left: 45px;
+.info-about.info-2{
+    margin-left: 120px;
 }
 
-.info-about.info-3{/*почему не марджинится??*/
-    margin-left: 90px;
+.info-about.info-3{
+    margin-left: 80px;
 }
 
 .info-about h4{

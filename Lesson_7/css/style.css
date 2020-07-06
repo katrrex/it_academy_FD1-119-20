@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #add8e6;
+}
+
+.header .contant{
+    height: 150px;
+    text-align: center;
+}
+
+.header h1{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #0000ff;
+    margin-top: 50px;
+}
+
+.box{
+    background: url("../img/ball.png") right repeat-y,
+                url("../img/box-menu-back.png") repeat-y left;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.menu{
+    width: 200px;
+    background-color: #f0e68c;
+    float: left;
+}
+
+.menu .contant{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu .contant ul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main{
+    margin-left: 200px;
+}
+
+.main .contant{
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main .contant h2{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.main .contant img{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main .contant p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.footer{
+    height: 100px;
+    background-color: #add8e6;
+}
+
+.footer .contant{
+    height: 100px;
+    text-align: center;
+}
+
+.footer h4{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #0000ff;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
