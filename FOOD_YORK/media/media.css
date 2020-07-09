@@ -1,0 +1,25 @@
+@media all and (max-width: 1024px){
+
+    .contant-wrap{
+    }
+
+}
+
+@media all and (max-width: 768px){
+
+    .catalog{
+        width: 896px;
+}
+
+    .catalog div {
+        width: 443px;
+        height: 309px;
+        padding-top: 94px;
+}
+
+
+
+
+
+
+}
