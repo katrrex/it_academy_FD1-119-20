@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="media/media.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKET_FORM_8A</title>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+        <div class="table">
+            <div class="tr">
+                <div  class="td" id="first"><p>Название статьи:</p></div>
+                <div  class="td" id="second"><input type="text" name="name"></div>
+            </div>
+            <div class="tr">
+                <div class="td" id="third"><p>Рубрика:</p></div>
+                <div class="td" id="fourth">
+                    <select name="heading">
+                        <option value="1">компьютерная техника</option>
+                        <option value="2">графика и дизайн</option>
+                        <option value="3" selected>программирование</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td" id="fifth">Публикация:</div>
+                <div  class="td" id="sixth">
+                    <div class="radio"><input type="radio" name="site" value="yes"> <span>на сайте</span></div> <div class="radio"><input type="radio" name="magazine" value="yes"> <span>в журнале</span></div> <div class="radio"><input type="radio" name="site-magazine" value="yes"> <span>на сайте и в журнале</span></div>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td" id="seventh">Разрешить комментарии:</div>
+                <div class="td" id="eight"><input type="checkbox" checked></div>
+            </div>
+            <div class="tr">
+                <div  class="td" colspan="2">
+                    <p>Текст статьи:</p>
+                    <textarea name="article" id="nineth"></textarea>
+                </div>
+            </div>
+            <div class="tr">
+                <div  class="td" colspan="2" id="tenth"> <input type="submit" value="Опубликовать"></div>
+            </div>
+        </div>
+    
+    
+    </form>
+</body>
+</html>

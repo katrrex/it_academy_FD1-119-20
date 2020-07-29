@@ -1,0 +1,56 @@
+@media all and (max-width: 980px){
+            
+    header{
+        order: 1;
+    }
+
+    menu{
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    main{
+        flex-basis: 100%;
+        order: 2;
+    }
+
+    footer{
+        display: none;
+    }
+
+    header h1{
+        font-style: 30px;
+        margin: 30px 30px 30px 30px;
+    }
+
+    main h2{
+        margin: 20px 0px 20px 0px;
+    }
+
+    main img{
+        margin: 0px 15px 0px 15px;
+    }
+
+    main p{
+        margin: 0px 15px 0px 15px;
+    }
+
+    main p:last-child{
+        margin-bottom: 15px;
+    }
+
+    menu h3,
+    menu ul{
+        margin: 15px 15px 0px 15px;
+    }
+
+    menu ul li:last-child{
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 424px){
+    header h1{
+        margin: 15px 15px 15px 15px;
+    }
+}

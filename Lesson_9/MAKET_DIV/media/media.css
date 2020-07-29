@@ -1,0 +1,33 @@
+@media all and (max-width: 980px){
+    
+.box{
+    background: url(../img/ball.png) right repeat-y;
+}
+
+.menu{
+    float: none;
+    width: auto;
+}
+
+.menu .contant{
+    text-align: center;
+    margin: 1%;
+}
+
+.menu .contant ul li{
+    display: inline-block;
+}
+
+.main{
+    margin-left: 0;
+}
+
+}
+
+@media all and (max-width: 250px){ /*почему не работает??*/
+
+.main .contant img{
+    float: right;
+}
+
+}

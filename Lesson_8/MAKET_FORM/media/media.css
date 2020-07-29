@@ -1,0 +1,23 @@
+@media all and (max-width: 624px){
+        
+        #first,
+        #second,
+        #third,
+        #fourth,
+        #fifth,
+        #sixth,
+        #nineth,
+        .radio{
+            width: 99%;
+            float: none;
+        }
+
+        #seventh{
+            width: 33%;
+        }
+
+        #eight{
+            width: 62%;
+        }
+
+       }

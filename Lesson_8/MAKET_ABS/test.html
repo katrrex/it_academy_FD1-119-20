@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .box{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: goldenrod;
+        }
+
+        .c1,
+        .c2,
+        .c3{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        .c1{
+            background-color: green;
+            z-index: 1;
+            left: 100px;
+            top: 100px;
+        }
+
+        .c2{
+            background-color: greenyellow;
+            z-index: 3;
+            top: 100px;
+            right: 100px;
+        }
+
+        .c3{
+            background-color: grey;
+            z-index: 4;
+            right: 150px;
+            bottom: 100px;
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <img class="c1" src="img/biohazard.png"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+        *{
+            margin: 0;
+            padding: 0;
+            /*border: solid 1px rgb(44, 42, 38);*/
+        }
+
+        div{
+            padding: 2px;
+        }
+
+        form{
+            padding: 10px;
+        }
+
+        .table{
+            display: table;
+            width: 100%;
+        }
+
+        .tr{
+            display: table-row;
+        }
+
+        #first,
+        #third,
+        #fifth,
+        #seventh{
+            width: 19%;
+            float: left;
+        }
+
+        #second,
+        #fourth,
+        #sixth,
+        #eight{
+            width: 79%;
+            float: right;
+        }
+
+        #nineth{
+            width: 100%
+        }
+
+        input[name="name"]{
+            width: 100%;
+        }
+
+        .radio{
+            float: left;
+        }

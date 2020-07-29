@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    display: block;
+    position: absolute;
+}
+
+img[alt="biohazard"]{
+    z-index: 1;
+    left: 50px;
+    top: 50px;
+    right: ;
+    bottom: ;
+}
+
+img[alt="Man-and-woman"]{
+    z-index: 1;
+    left: ;
+    top: 30px;
+    right: 30px;
+    bottom: ;
+}
+
+img[alt="Yin_and_Yang"]{
+    z-index: 1;
+    left: ;
+    top: ;
+    right: 140px;
+    bottom: 40px;
+}
+
+img[alt="No_smoking"]{
+    z-index: 2;
+    left: 130px;
+    top: ;
+    right: ;
+    bottom: 130px;
+}
+
+img[alt="biohazard"]:hover,
+img[alt="Man-and-woman"]:hover,
+img[alt="Yin_and_Yang"]:hover{
+    z-index: 3;
+}

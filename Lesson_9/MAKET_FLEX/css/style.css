@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px orange;*/
+    font-size: 20px;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    flex-basis: 100%;
+    background-color: #add8e6;
+}
+
+menu{
+    flex: 2;
+    background-color: #f0e68c;
+}
+
+main{
+    flex: 8;
+    background-color: #ffffff;
+}
+
+footer{
+    flex-basis: 100%;
+    background-color: #add8e6;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0000ff;
+    margin: 50px 0px 50px 0px;
+}
+
+h3,
+h2{
+    font-size: 30px;
+}
+
+menu h3,
+menu ul{
+    list-style-type: none;
+    margin: 30px 30px 0px 30px;
+}
+
+main h2{
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+main img{
+    float: left;
+    margin: 0px 30px 0px 30px;
+}
+
+main p{
+    margin: 0px 30px 0px 30px;
+    text-align: justify;
+}
+
+main p:last-child{
+        margin-bottom: 30px;
+    }
