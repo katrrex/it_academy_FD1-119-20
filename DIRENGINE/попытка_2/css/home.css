@@ -1,0 +1,1699 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+p{
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+/*-------------------------ХЕДЕР НАЧАЛО--------------------------------*/
+
+.home .header_wrap{
+    height: 720px;
+    background: url(../images/bg_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid 1px red;
+}
+
+.home .header_wrap .content{
+    height: 720px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+/*----ЭТО ЛОГОТИП НАВ КНОПКА НАЧАЛО----*/
+
+/*от флекса уплывает вниз контент*/
+.header_wrap .logo_nav_btn{/*будет на каждой странице*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.header_wrap .logo_nav_btn span a{/*будет на каждой странице*/
+    font-size: 22px;
+    font-weight: 800;
+    color: rgb(255, 255, 255, 1);
+}
+
+.header_wrap .nav_btn{/*будет на каждой странице*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_wrap .nav_btn ul{/*будет на каждой странице*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_wrap .nav_btn ul li a{/*будет на каждой странице*/
+    font-size: 16px;
+    color: rgb(255, 255, 255, 1);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header_wrap .nav_btn ul li:nth-child(1) a{/*будет на каждой странице но другой чилд*/
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.6);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header_wrap .nav_btn ul li:nth-child(1) a:hover{/*будет на каждой странице но другой чилд*/
+    color: rgb(255, 255, 255, 1);
+    transition-duration: .5s;
+}
+
+/*нужно подвинуть эту кнопку*/
+.header_wrap .logo_nav_btn button{/*будет на каждой странице*/
+    height: 50px;
+    width: 140px;
+    background: none;
+    border: solid 1px rgb(255, 255, 255, 0.6);
+    border-radius: 25px;
+    outline: none;
+}
+
+.header_wrap .logo_nav_btn button:hover{/*будет на каждой странице*/
+    height: 50px;
+    width: 140px;
+    background: rgb(248, 89, 89, 1);
+    border: solid 1px rgb(248, 89, 89, 1);
+    border-radius: 25px;
+    outline: none;
+    transition-duration: .5s;
+}
+
+.header_wrap .logo_nav_btn button span a{/*будет на каждой странице*/
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(255, 255, 255, 1);
+}
+
+/*----ЭТО ЛОГОТИП НАВ КНОПКА КОНЕЦ----*/
+
+/*----ЭТО ХЕДЕР ПЕРВЫЙ ЗАГОЛОВОК НАЧАЛО----*/
+
+.header_wrap h1{/*только на этой странице*/
+    font-size: 60px;
+    line-height: 72px;
+    color: rgb(255, 255, 255, 1);
+    margin-top: 50px;
+}
+
+.header_wrap h1 span{/*только на этой странице*/
+    font-weight: 300;
+    color: rgb(255, 255, 255, 1);
+}
+
+/*----ЭТО ХЕДЕР ПЕРВЫЙ ЗАГОЛОВОК КОНЕЦ----*/
+
+/*----ЭТО ХЕДЕР ФОРМА НАЧАЛО----*/
+
+.header_wrap form{/*САМА ФОРМА*/ /*только на этой странице*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-top: 30px;
+}
+
+.header_wrap form label{/*ЛЕЙБЛ В ФОРМЕ*/ /*только на этой странице*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.header_wrap form label span{/*СПАН В ЛЕЙБЛЕ ФОРМЫ*/ /*только на этой странице*/
+    flex-basis: 100%;
+    color: rgb(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.header_wrap form [type="text"]{/*ИНПУТ ВВОД ТЕКСТА*/ /*только на этой странице*/
+    flex-basis: 30%;
+    height: 70px;
+    border: none;
+    padding-left: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.header_wrap form select{/*СЕЛЕКТ ВЫБОР ГОРОДА*/ /*только на этой странице*/
+    flex-basis: 30%;
+    height: 70px;
+    border: none;
+    border-left: solid 1px rgba(223, 224, 230, 1);
+    padding-left: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.header_wrap form [type="button"]{/*КНОМПА ФОРМЫ СЕРЧ*/ /*только на этой странице*/
+        flex-basis: 12%;
+        height: 70px;
+        background-color: rgba(249, 88, 88, 1);
+        color: rgba(255, 255, 255, 1);
+        border: none;
+        outline: none;
+        font-size: 16px;
+}
+    
+/*----ЭТО ХЕДЕР ФОРМА КОНЕЦ----*/
+
+/*----СПАН ПОД ФОРМОЙ НАЧЛАО----*/
+
+.header_wrap content > span{/*не работает*/ /*только на этой странице*/
+    color: rgb(255, 255, 255, 0.8);
+    margin-top: 30px;
+}
+
+/*----СПАН ПОД ФОРМОЙ КОНЕЦ----*/
+
+/*----КНОПКИ ПОД ФОРМОЙ НАЧАЛО----*/
+
+.header_wrap .find_btn{ /*только на этой странице*/
+    margin-top: 30px;
+}
+
+.header_wrap .find_btn button:nth-child(1){/*КНОПКА В СПОКОЙНОМ СОСТОЯНИИ*/ /*только на этой странице*/
+    height: 50px;
+    width: 170px;
+    background: url(../images/fbi_001.png) no-repeat center left rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+}
+
+.header_wrap .find_btn button span{/*ТЕКСТ КАЖДОЙ КНОПКИ*/ /*только на этой странице*/
+    font-size: 18px;
+    color: rgb(0, 0, 0, 0.8);
+    margin-left: 35px;
+}
+
+/*ТУТ НАДО НАПИСАТЬ СТИЛЬ ДЛЯ ИЗМЕНЕНИЯ ЦВЕТА ТЕКСТА КАЖДОЙ КНОПКИ ПРИ НАВЕДЕНИИ*/
+
+.header_wrap .find_btn button:nth-child(1):hover{/*КНОПКА ПРИ НАВЕДЕНИИ*/ /*только на этой странице*/
+    background: url(../images/fbi_h_001.png) no-repeat center left rgba(249, 88, 88, 1);
+
+}
+
+.header_wrap .find_btn button:nth-child(2){/*КНОПКА В СПОКОЙНОМ СОСТОЯНИИ*/ /*НЕ РАБОТАЕТ КАРТИНКА*/ /*только на этой странице*/
+    height: 50px;
+    width: 170px;
+    background: url(../images/fbi_002.png) no-repeat center left rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+}
+
+.header_wrap .find_btn button:nth-child(2):hover{/*КНОПКА ПРИ НАВЕДЕНИИ*/ /*только на этой странице*/
+    background: url(../images/fbi_h_002.png) no-repeat center left rgba(249, 88, 88, 1);
+
+}
+
+.header_wrap .find_btn button:nth-child(3){/*КНОПКА В СПОКОЙНОМ СОСТОЯНИИ*/ /*НЕ РАБОТАЕТ КАРТИНКА*/ /*только на этой странице*/
+    height: 50px;
+    width: 170px;
+    background: url(../images/fbi_003.png) no-repeat center left rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+}
+
+.header_wrap .find_btn button:nth-child(3):hover{/*КНОПКА ПРИ НАВЕДЕНИИ*/ /*только на этой странице*/
+    background: url(../images/fbi_h_003.png) no-repeat center left rgba(249, 88, 88, 1);
+
+}
+
+.header_wrap .find_btn button:nth-child(4){/*КНОПКА В СПОКОЙНОМ СОСТОЯНИИ*/ /*НЕ РАБОТАЕТ КАРТИНКА*/ /*только на этой странице*/
+    height: 50px;
+    width: 170px;
+    background: url(../images/fbi_004.png) no-repeat center left rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+}
+
+.header_wrap .find_btn button:nth-child(4):hover{/*КНОПКА ПРИ НАВЕДЕНИИ*/ /*только на этой странице*/
+    background: url(../images/fbi_h_004.png) no-repeat center left rgba(249, 88, 88, 1);
+
+}
+
+/*----КНОПКИ ПОД ФОРМОЙ КОНЕЦ----*/
+
+/*-------------------------ХЕДЕР КОНЕЦ--------------------------------*/
+
+/*-------------------------МЭИН НАЧАЛО--------------------------------*/
+
+/*-------------------------МЭИН ФЕРСТ НАЧАЛО--------------------------*/
+
+/*-------------------------МЭИН КАРДС НАЧАЛО--------------------------*/
+
+.home .main_first_wrap{
+    height: 415px;
+    background-color: rgba(229, 233, 240, 0.6);
+    border: solid 1px red;
+}
+
+.home .main_first_wrap .content{
+    height: 415px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.main_first_wrap .box_cards{ /*только на этой странице*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+}
+
+.main_first_wrap .box_cards .card:nth-child(1){ /*только на этой странице*/
+    background: url(../images/bi_001.png) no-repeat center top rgba(255, 255, 255, 1);
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.main_first_wrap .box_cards h3{/*ПОПРАВИТЬ ТЕКСТ*/ /*только на этой странице*/
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 30px;
+    color: rgb(77, 77, 77, 1);
+}
+
+.main_first_wrap .box_cards p{ /*только на этой странице*/
+    line-height: normal;
+}
+
+.main_first_wrap .box_cards .card:nth-child(1):hover{ /*только на этой странице*/
+    background: url(../images/bi_h_001.png) no-repeat center top rgba(249, 88, 88, 1);
+    transition-duration: .5s;
+}
+
+/*ТУТ НАДО НАПИСАТЬ СТИЛЬ ДЛЯ ИЗМЕНЕНИЯ ЦВЕТА ТЕКСТА КАЖДОГО ЗАГОЛОВКА И ПАРАГРАФА ПРИ НАВЕДЕНИИ НА КАЖДУЮ КАРТОЧКУ*/
+
+.main_first_wrap .box_cards .card:nth-child(2){ /*только на этой странице*/
+    background: url(../images/bi_002.png) no-repeat center top rgba(255, 255, 255, 1);
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.main_first_wrap .box_cards .card:nth-child(2):hover{ /*только на этой странице*/
+    background: url(../images/bi_h_002.png) no-repeat center top rgba(249, 88, 88, 1);
+    transition-duration: .5s;
+}
+
+.main_first_wrap .box_cards .card:nth-child(3){ /*только на этой странице*/
+    background: url(../images/bi_003.png) no-repeat center top rgba(255, 255, 255, 1);
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.main_first_wrap .box_cards .card:nth-child(3):hover{ /*только на этой странице*/
+    background: url(../images/bi_h_003.png) no-repeat center top rgba(249, 88, 88, 1);
+    transition-duration: .5s;
+}
+
+.main_first_wrap .box_cards .card:nth-child(4){ /*только на этой странице*/
+    background: url(../images/bi_004.png) no-repeat center top rgba(255, 255, 255, 1);
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.main_first_wrap .box_cards .card:nth-child(4):hover{ /*только на этой странице*/
+    background: url(../images/bi_h_004.png) no-repeat center top rgba(249, 88, 88, 1);
+    transition-duration: .5s;
+}
+
+/*-------------------------МЭИН КАРДС КОНЕЦ--------------------------*/
+
+/*-------------------------МЭИН ФЕРСТ КОНЕЦ--------------------------*/
+
+/*-------------------------МЭИН ФЬЮЧЕРЕД НАЧАЛО----------------------*/
+
+.home .main_featured_wrap{
+    height: 880px;
+    background-color: rgb(255, 255, 255, 1);
+    border: solid 1px red;
+}
+
+.home .main_featured_wrap .content{
+    height: 790px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.main_featured_wrap p{
+    font-size: 16px;
+    margin-top: 90px;
+}
+
+.main_featured_wrap h3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.main_featured_wrap h3 span{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*--------------------СЕКЦИЯ ФЬЮЧЕРЕД АЙТЕМС НАЧАЛО------------------*/
+
+.main_featured_wrap .features_items{
+    display: flex;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.features_items .feature_item{
+    margin: 0px 16px 0px 16px;
+    background-color: rgb(250, 250, 250, 1);
+    border: solid 2px rgba(249, 250, 255, 1);
+}
+
+.features_items .layer_magnifier{/*---МАГНИФЕР---*/
+    position: relative;
+}
+
+.features_items .layer_magnifier a{/*---МАГНИФЕР---*/
+    text-decoration: none;
+}
+
+.features_items .feature_img{
+    height: 367px;
+    width: 306px;
+} 
+
+.features_items .layer_magnifier .magnifier{/*---МАГНИФЕР---*/
+    display: none;
+    position: absolute;
+    left: 38%;
+    bottom: 38%;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    background: url(../images/magnifer.png) no-repeat center center rgba(255, 255, 255, 1);
+    border-radius: 32px;
+}
+
+.features_items .layer_magnifier:hover .magnifier{/*---МАГНИФЕР---*/
+    display: block;
+}
+
+.features_items .feature_img.img_1{
+    background-image: url(../images/destination-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.features_items .feature_img.img_2{
+    background-image: url(../images/destination-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.features_items .feature_img.img_3{
+    background-image: url(../images/destination-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.features_items .feature_img.img_4{
+    background-image: url(../images/destination-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.features_items .feature_img.img_5{
+    background-image: url(../images/destination-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.features_items .feature_img.img_6{
+    background-image: url(../images/destination-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.features_items .feature_item h3{/*---БЛОК НАДПИСЕЙ---*/
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 20px 20px 20px;
+    text-align: left;
+}
+
+.features_items .feature_item h3 a{/*---БЛОК НАДПИСЕЙ---*/
+    text-decoration: none;
+    color: rgb(0, 0, 0, 1);
+}
+
+.features_items .feature_item p{/*---БЛОК НАДПИСЕЙ---*/
+    font-size: 15px;
+    margin: 20px 20px 20px 20px;
+    text-align: left;
+    color: rgb(77, 77, 77, 0.7);
+}
+
+/*------ЗДЕСЬ ПРОПИСАТЬ 2 МАЛЕНЬКИЕ КНОПКИ ПЕРЕКЛЮЧЕНИЯ СЕКЦИИ------*/
+
+/*--------------------СЕКЦИЯ ФЬЮЧЕРЕД АЙТЕМС КОНЕЦ------------------*/
+
+/*-------------------------МЭИН ФЬЮЧЕРЕД КОНЕЦ-----------------------*/
+
+/*-------------------------МЭИН ОФФЕРС ФЕРСТ НАЧАЛО------------------*/
+
+.home .main_offers_first_wrap{
+    height: 880px;
+    background-color: rgba(229, 233, 240, 0.6);
+    border: solid 1px red;
+}
+
+.home .main_offers_first_wrap .content{
+    height: 880px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.main_offers_first_wrap p{
+    font-size: 16px;
+    margin-top: 90px;
+}
+
+.main_offers_first_wrap h3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.main_offers_first_wrap h3 span{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*--------------------СЕКЦИЯ ОФФЕРС АЙТЕМС НАЧАЛО------------------*/
+
+.main_offers_first_wrap .offers_items{
+    margin-top: 100px;
+    display: flex;
+    border: solid 1px red;
+}
+
+.offers_items .offer_item{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.offers_items .layer_magnifier{/*---МАГНИФЕР---*/
+    position: relative;
+}
+
+.offers_items .layer_magnifier a{/*---МАГНИФЕР---*/
+    text-decoration: none;
+}
+
+.offers_items .feature_img{
+    height: 366px;
+    width: 306px;
+} 
+
+.offers_items .layer_magnifier .magnifier{/*---МАГНИФЕР---*/
+    display: none;
+    position: absolute;
+    left: 38%;
+    bottom: 38%;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    background: url(../images/magnifer.png) no-repeat center center rgba(255, 255, 255, 1);
+    border-radius: 32px;
+}
+
+.offers_items .layer_magnifier:hover .magnifier{/*---МАГНИФЕР---*/
+    display: block;
+}
+
+.offer_item .offer_img{
+    flex: 1;
+    flex-basis: 100%;
+    height: 200px;
+}
+
+.main_offers_first_wrap .offers_items .offer_img.img_1{
+    background-image: url(../images/destination-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_first_wrap .offers_items .offer_img.img_2{
+    background-image: url(../images/destination-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_first_wrap .offers_items .offer_img.img_3{
+    background-image: url(../images/destination-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_first_wrap .offers_items .offer_img.img_4{
+    background-image: url(../images/destination-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_first_wrap .offers_items .offer_img.img_5{
+    background-image: url(../images/destination-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.offer_content{/*---БЛОК НАДПИСЕЙ---*/
+    border: solid 1px #e6e6e6;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.offer_content .text_line_1{/*---БЛОК НАДПИСЕЙ---*/
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px 15px 15px;
+}
+
+.offer_content .text_line_1 h3{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.offer_content h3 a{/*---БЛОК НАДПИСЕЙ---*/
+    text-decoration: none;
+    color: rgba(62, 62, 62, 1);
+}
+
+.offer_content .text_line_1 span{/*---БЛОК НАДПИСЕЙ---*/
+    color: rgba(47, 137, 252, 1);
+}
+
+.offer_content .text_line_2{/*---БЛОК НАДПИСЕЙ---*/
+    margin: 0px 15px 30px 15px;
+}
+
+.text_line_2 .raiting .star{/*---БЛОК НАДПИСЕЙ---*/
+    height: 8px;
+    width: 8px;
+    background-image: url(../images/star_white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin: 0px 5px 0px 0px;
+}
+
+.text_line_2 .raiting{/*---БЛОК НАДПИСЕЙ---*/
+    height: 6px;
+    width: 66px;
+}
+
+.text_line_2 .raiting .star:hover,
+.text_line_2 .raiting .star:hover~div{/*---БЛОК НАДПИСЕЙ---*/
+    height: 8px;
+    width: 8px;
+    background: url(../images/star_orange.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin: 0px 5px 0px 0px;
+    transform: rotateY(180deg);
+}
+
+.text_line_2 span{/*---БЛОК НАДПИСЕЙ---*/
+    font-size: 10px;
+}
+
+.offer_content p{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    font-size: 15px;
+    line-height: normal;
+    margin: 0px 15px 30px 15px;
+}
+
+.offer_content span:nth-child(4){/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 15px 20px 15px;
+}
+
+.offer_content .line{/*---БЛОК НАДПИСЕЙ---*/
+    margin: 0px 15px 15px 15px;
+}
+
+.offer_content .text_line_3{/*---БЛОК НАДПИСЕЙ---*/
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px 15px 15px;
+}
+
+.text_line_3 .img_map{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    background-image: url(../images/map.PNG);
+    background-repeat: no-repeat;
+    background-size: 40px 30px;
+    font-size: 15px;
+    padding-top: 5px;
+}   
+
+.img_map span{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    margin-left: 38px;
+}
+
+.text_line_3 button{/*---БЛОК НАДПИСЕЙ---*/
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(139, 195, 74, 1);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 3px;
+}
+
+.text_line_3 button a{/*---БЛОК НАДПИСЕЙ---*/
+    text-decoration: none;
+    color: rgb(255, 255, 255, 1);
+}
+
+/*--------------------СЕКЦИЯ ОФФЕРС АЙТЕМС КОНЕЦ------------------*/
+
+/*-------------------------МЭИН ОФФЕРС ФЕРСТ КОНЕЦ-----------------*/
+
+/*-------------------------МЭИН ФАКТС НАЧАЛО----------------------*/
+
+.home .main_facts_wrap{
+    height: 600px;
+    background: url(../images/bg_1_linear.jpg);
+    background-size: cover;
+    background-position: center;
+    border: solid 1px red;
+}
+
+.home .main_facts_wrap .content{
+    height: 453px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.facts_content h2{
+    font-size: 44px;
+    font-weight: 400;
+    margin-top: 150px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.facts_content span{
+    display: block;
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.8);
+    line-height: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fact_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.fact_block .fact h2{
+    margin-top: 0;
+}
+
+.fact_block .fact span{
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+/*-------------------------МЭИН ФАКТС КОНЕЦ-----------------------*/
+
+/*-------------------------МЭИН ОФФЕРС СЕКОНД НАЧАЛО------------------*/
+
+.home .main_offers_second_wrap{
+    height: 880px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: solid 1px red;
+}
+
+.home .main_offers_second_wrap .content{
+    height: 790px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.main_offers_second_wrap p{
+    font-size: 16px;
+    margin-top: 90px;
+}
+
+.main_offers_second_wrap h3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.main_offers_second_wrap h3 span{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*--------------------СЕКЦИЯ ОФФЕРС АЙТЕМС НАЧАЛО------------------*/
+
+.main_offers_second_wrap .offers_items{
+    margin-top: 100px;
+    display: flex;
+    border: solid 1px red;
+}
+
+.offers_items .offer_item{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.offers_items .layer_magnifier{/*---МАГНИФЕР---*/
+    position: relative;
+}
+
+.offers_items .layer_magnifier a{/*---МАГНИФЕР---*/
+    text-decoration: none;
+}
+
+.offers_items .feature_img{
+    height: 366px;
+    width: 306px;
+} 
+
+.offers_items .layer_magnifier .magnifier{/*---МАГНИФЕР---*/
+    display: none;
+    position: absolute;
+    left: 38%;
+    bottom: 38%;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    background: url(../images/magnifer.png) no-repeat center center rgba(255, 255, 255, 1);
+    border-radius: 32px;
+}
+
+.offers_items .layer_magnifier:hover .magnifier{/*---МАГНИФЕР---*/
+    display: block;
+}
+
+.offer_item .offer_img{
+    flex: 1;
+    flex-basis: 100%;
+    height: 200px;
+}
+
+.main_offers_second_wrap .offers_items .offer_img.img_1{
+    background-image: url(../images/hotel-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_second_wrap .offers_items .offer_img.img_2{
+    background-image: url(../images/hotel-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_second_wrap .offers_items .offer_img.img_3{
+    background-image: url(../images/hotel-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_second_wrap .offers_items .offer_img.img_4{
+    background-image: url(../images/hotel-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_second_wrap .offers_items .offer_img.img_5{
+    background-image: url(../images/hotel-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.offer_content{/*---БЛОК НАДПИСЕЙ---*/
+    border: solid 1px #e6e6e6;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.offer_content .text_line_1{/*---БЛОК НАДПИСЕЙ---*/
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px 15px 15px;
+}
+
+.offer_content .text_line_1 h3{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.offer_content h3 a{/*---БЛОК НАДПИСЕЙ---*/
+    text-decoration: none;
+    color: rgba(62, 62, 62, 1);
+}
+
+.offer_content .text_line_1 span{/*---БЛОК НАДПИСЕЙ---*/
+    color: rgba(47, 137, 252, 1);
+}
+
+.offer_content .text_line_2{/*---БЛОК НАДПИСЕЙ---*/
+    margin: 0px 15px 30px 15px;
+}
+
+.text_line_2 .raiting .star{/*---БЛОК НАДПИСЕЙ---*/
+    height: 8px;
+    width: 8px;
+    background-image: url(../images/star_white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin: 0px 5px 0px 0px;
+}
+
+.text_line_2 .raiting{/*---БЛОК НАДПИСЕЙ---*/
+    height: 6px;
+    width: 66px;
+}
+
+.text_line_2 .raiting .star:hover,
+.text_line_2 .raiting .star:hover~div{/*---БЛОК НАДПИСЕЙ---*/
+    height: 8px;
+    width: 8px;
+    background: url(../images/star_orange.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin: 0px 5px 0px 0px;
+    transform: rotateY(180deg);
+}
+
+.text_line_2 span{/*---БЛОК НАДПИСЕЙ---*/
+    font-size: 10px;
+}
+
+.offer_content p{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    font-size: 15px;
+    line-height: normal;
+    margin: 0px 15px 30px 15px;
+}
+
+.offer_content span:nth-child(4){/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 15px 20px 15px;
+}
+
+.offer_content .line{/*---БЛОК НАДПИСЕЙ---*/
+    margin: 0px 15px 15px 15px;
+}
+
+.offer_content .text_line_3{/*---БЛОК НАДПИСЕЙ---*/
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px 15px 15px;
+}
+
+.text_line_3 .img_map{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    background-image: url(../images/map.PNG);
+    background-repeat: no-repeat;
+    background-size: 40px 30px;
+    font-size: 15px;
+    padding-top: 5px;
+}   
+
+.img_map span{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.text_line_3 button{/*---БЛОК НАДПИСЕЙ---*/
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(139, 195, 74, 1);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 3px;
+}
+
+.text_line_3 button a{/*---БЛОК НАДПИСЕЙ---*/
+    text-decoration: none;
+    color: rgb(255, 255, 255, 1);
+}
+
+/*--------------------СЕКЦИЯ ОФФЕРС АЙТЕМС КОНЕЦ------------------*/
+
+/*-------------------------МЭИН ОФФЕРС СЕКОНД КОНЕЦ-----------------*/
+
+/*-------------------------МЭИН ЭБАУТ НАЧАЛО----------------------*/
+
+.home .main_about_wrap{
+    height: 535px;
+    background-color: rgba(229, 233, 240, 0.6);
+    border: solid 1px red;
+}
+
+.home .main_about_wrap .content{
+    display: flex;
+    justify-content: space-between;
+    height: 535px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.main_about_wrap .name_info_about{
+    display: inline-block;
+    margin-top: 90px;
+    font-size: 15px;
+}
+
+.main_about_wrap .box_left{
+    flex-basis: 49%;
+    border: solid 1px  rgba(249, 89, 89, 1);
+}
+
+.main_about_wrap .box_right{
+    flex-basis: 49%;
+    border: solid 1px  rgba(249, 89, 89, 1);
+}
+
+.main_about_wrap h2{
+    margin-top: 30px;
+}
+
+.main_about_wrap h2 span{
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.main_about_wrap p{
+    font-size: 15px;
+    line-height: normal;
+}
+
+.box_left p:nth-child(3){
+    margin-top: 50px;
+}
+
+.box_left p:nth-child(4){
+    margin-top: 30px;
+}
+
+.box_left button{
+    width: 140px;
+    height: 60px;
+    border: solid 1px  rgba(249, 89, 89, 1);
+    border-radius: 30px;
+    background: none;
+    margin-top: 45px;
+}
+
+.box_left button:hover{
+    background-color: rgba(249, 89, 89, 1);
+    transition-duration: .5s;
+}
+
+.box_left button a{
+    text-decoration: none;
+    color: rgba(249, 89, 89, 1);
+    font-size: 17px;
+}
+
+.box_left button:hover a{
+    color:  rgb(255, 255, 255);
+    transition-duration: .5s;
+}
+
+.box_right .slider{
+    display: flex;
+    overflow: hidden;
+    width: 577px;
+    margin-top: 40px;
+    border: solid 1px  rgba(249, 89, 89, 1);
+}
+
+.box_right .slider-box{
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.slider-box .slider_content{
+    display: inline-block;
+    width: 495px;
+    margin: 33px 45px 33px 33px;
+}
+
+.slider_content .box_imgs{
+    float: left;
+    position: relative;
+}
+
+.box_imgs .person_img{
+    height: 95px;
+    border-radius: 48px;
+}
+
+.box_imgs .brecket_img{
+    position: absolute;
+    height: 40px;
+    top: 64px;
+    left: 56px;
+    border-radius: 20px;
+}
+
+.slider_content .box_text{
+    margin-left: 25%;
+}
+
+.box_text span:nth-child(2){
+    display: block;
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.box_text span:nth-child(3){
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/*-------------------------МЭИН ЭБАУТ КОНЕЦ-----------------------*/
+
+/*-------------------------МЭИН ОФФЕРС ФЕРД НАЧАЛО------------------*/
+
+.home .main_offers_third_wrap{
+    height: 880px;
+    background-color: rgb(255, 255, 255, 1);
+    border: solid 1px red;
+}
+
+.home .main_offers_third_wrap .content{
+    height: 790px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.main_offers_third_wrap p{
+    font-size: 16px;
+    margin-top: 90px;
+}
+
+.main_offers_third_wrap h3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.main_offers_third_wrap h3 span{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*--------------------СЕКЦИЯ ОФФЕРС АЙТЕМС НАЧАЛО------------------*/
+
+.main_offers_third_wrap .offers_items{
+    margin-top: 100px;
+    display: flex;
+    border: solid 1px red;
+}
+
+.offers_items .offer_item{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.offers_items .layer_magnifier{/*---МАГНИФЕР---*/
+    position: relative;
+}
+
+.offers_items .layer_magnifier a{/*---МАГНИФЕР---*/
+    text-decoration: none;
+}
+
+.offers_items .feature_img{
+    height: 366px;
+    width: 306px;
+} 
+
+.offers_items .layer_magnifier .magnifier{/*---МАГНИФЕР---*/
+    display: none;
+    position: absolute;
+    left: 38%;
+    bottom: 38%;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    background: url(../images/magnifer.png) no-repeat center center rgba(255, 255, 255, 1);
+    border-radius: 32px;
+}
+
+.offers_items .layer_magnifier:hover .magnifier{/*---МАГНИФЕР---*/
+    display: block;
+}
+
+.offer_item .offer_img{
+    flex: 1;
+    flex-basis: 100%;
+    height: 200px;
+}
+
+.main_offers_third_wrap .offers_items .offer_img.img_1{
+    background-image: url(../images/restaurant-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_third_wrap .offers_items .offer_img.img_2{
+    background-image: url(../images/restaurant-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_third_wrap .offers_items .offer_img.img_3{
+    background-image: url(../images/restaurant-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_offers_third_wrap .offers_items .offer_img.img_4{
+    background-image: url(../images/restaurant-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.offer_content{/*---БЛОК НАДПИСЕЙ---*/
+    border: solid 1px #e6e6e6;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.offer_content .text_line_1{/*---БЛОК НАДПИСЕЙ---*/
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px 15px 15px;
+}
+
+.offer_content .text_line_1 h3{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.offer_content h3 a{/*---БЛОК НАДПИСЕЙ---*/
+    text-decoration: none;
+    color: rgba(62, 62, 62, 1);
+}
+
+.offer_content .text_line_1 span{/*---БЛОК НАДПИСЕЙ---*/
+    color: rgba(47, 137, 252, 1);
+}
+
+.offer_content .text_line_2{/*---БЛОК НАДПИСЕЙ---*/
+    margin: 0px 15px 30px 15px;
+}
+
+.text_line_2 .raiting .star{/*---БЛОК НАДПИСЕЙ---*/
+    height: 8px;
+    width: 8px;
+    background-image: url(../images/star_white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin: 0px 5px 0px 0px;
+}
+
+.text_line_2 .raiting{/*---БЛОК НАДПИСЕЙ---*/
+    height: 6px;
+    width: 66px;
+}
+
+.text_line_2 .raiting .star:hover,
+.text_line_2 .raiting .star:hover~div{/*---БЛОК НАДПИСЕЙ---*/
+    height: 8px;
+    width: 8px;
+    background: url(../images/star_orange.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin: 0px 5px 0px 0px;
+    transform: rotateY(180deg);
+}
+
+.text_line_2 span{/*---БЛОК НАДПИСЕЙ---*/
+    font-size: 10px;
+}
+
+.offer_content p{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    font-size: 15px;
+    line-height: normal;
+    margin: 0px 15px 30px 15px;
+}
+
+.offer_content span:nth-child(4){/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 15px 20px 15px;
+}
+
+.offer_content .line{/*---БЛОК НАДПИСЕЙ---*/
+    margin: 0px 15px 15px 15px;
+}
+
+.offer_content .text_line_3{/*---БЛОК НАДПИСЕЙ---*/
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px 15px 15px;
+}
+
+.text_line_3 .img_map{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    background-image: url(../images/map.PNG);
+    background-repeat: no-repeat;
+    background-size: 40px 30px;
+    font-size: 15px;
+    padding-top: 5px;
+}   
+
+.img_map span{/*---БЛОК НАДПИСЕЙ---*/
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.text_line_3 button{/*---БЛОК НАДПИСЕЙ---*/
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(139, 195, 74, 1);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 3px;
+}
+
+.text_line_3 button a{/*---БЛОК НАДПИСЕЙ---*/
+    text-decoration: none;
+    color: rgb(255, 255, 255, 1);
+}
+
+/*--------------------СЕКЦИЯ ОФФЕРС АЙТЕМС КОНЕЦ------------------*/
+
+/*-------------------------МЭИН ОФФЕРС ФЕРД КОНЕЦ-----------------*/
+
+/*-------------------------МЭИН ОФФЕРС БЛОГ НАЧАЛО------------------*/
+
+.home .main_blog_wrap{
+    height: 1060px;
+    background-color: rgba(229, 233, 240, 0.6);
+    border: solid 1px red;
+}
+
+.home .main_blog_wrap .content{
+    height: 1060px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.main_blog_wrap p{
+    font-size: 16px;
+    margin-top: 90px;
+}
+
+.main_blog_wrap h3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.main_blog_wrap h3 span{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.blog_content p{
+    font-size: 16px;
+    margin: 20px 20px 20px 20px;
+    color: rgba(62, 62, 62, 0.7);
+}
+
+.blog_content h3{
+    line-height: 0.1;
+    margin: 20px 20px 20px 20px;
+}
+
+.blog_content h3 a{
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: rgba(62, 62, 62, 1);
+}
+
+.blog_content h3 a:hover{
+    color: rgba(249, 89, 89, 1);
+    transition-duration: .5s;
+}
+
+.blog_content p a{
+    font-size: 16px;
+    color: rgba(62, 62, 62, 0.7);
+}
+
+.blog_content p a:hover{
+    color: rgba(62, 62, 62, 0.5);
+    transition-duration: .5s;
+}
+
+.blog_content p span::before{/*----КАК РАСТЫНУТЬ КАРТИНКУ, НЕ ПОЛУЧАЕТСЯ, МАЛО КОНТЕНТА, ВСЕГО -ЛИШЬ ОДИН СИМВОЛ----*/
+   content: url(../images/list.PNG);
+}
+
+.blog_content p a:hover~.blog_content p span::before{
+    content: url(../images/list.PNG);
+}
+
+/*--------------------СЕКЦИЯ БЛОГ АЙТЕМС НАЧАЛО------------------*/
+
+.main_blog_wrap .blogs_items{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.blogs_items .blog_item{
+    margin: 0px 16px 0px 16px;
+    background-color: rgb(250, 250, 250, 1);
+    border: solid 2px rgba(249, 250, 255, 1);
+}
+
+.blogs_items .blog_img{
+    height: 336px;
+    width: 275px;
+}
+
+.blogs_items .blog_img.img_1{
+    background-image: url(../images/image_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blogs_items .blog_img.img_2{
+    background-image: url(../images/image_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blogs_items .blog_img.img_3{
+    background-image: url(../images/image_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blogs_items .blog_img.img_4{
+    background-image: url(../images/image_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*------ЗДЕСЬ ПРОПИСАТЬ 2 МАЛЕНЬКИЕ КНОПКИ ПЕРЕКЛЮЧЕНИЯ СЕКЦИИ------*/
+
+/*--------------------СЕКЦИЯ БЛОГ АЙТЕМС КОНЕЦ------------------*/
+
+/*-------------------------МЭИН ОФФЕРС БЛОГ КОНЕЦ-----------------*/
+
+/*-------------------------МЭИН СУБКРАЙБ НАЧАЛО----------------------*/
+
+.home .main_subcribe_wrap{
+    height: 535px;
+    background: linear-gradient(to bottom right,rgb(46, 189, 196,1 ), rgb(104, 229, 178, 1));
+    border: solid 1px red;
+}
+
+.home .main_subcribe_wrap .content{
+    height: 385px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+.main_subcribe_wrap h2 {
+    font-size: 44px;
+    font-weight: 400;
+    margin-top: 150px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.main_subcribe_wrap span {
+    display: block;
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.8);
+    line-height: normal;
+    text-align: center;
+    margin-top: 20px;    
+}
+
+.main_subcribe_wrap form{
+    margin-top: 50px;
+    text-align: center;
+}   
+
+.main_subcribe_wrap form [type="text"]{/*ИНПУТ ВВОД ТЕКСТА*/ /*только на этой странице*/
+    height: 50px;
+    width: 300px;
+    background: none;
+    border: solid 1px rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+.main_subcribe_wrap form [type="button"]{/*КНОМПА ФОРМЫ СЕРЧ*/ /*только на этой странице*/
+    height: 52px;
+    width: 115px;
+    background: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -6px;
+    border: solid 1px rgba(255, 255, 255, 0.7);
+    outline: none;
+    font-size: 16px;
+}
+
+/*-------------------------МЭИН СУБКРАЙБ КОНЕЦ-----------------------*/
+
+/*-------------------------МЭИН КОНЕЦ--------------------------------*/
+
+/*-------------------------ФУТЕР НАЧАЛО------------------------------*/
+
+.home .footer_wrap{
+    height: 780px; 
+    background-color: rgb(34, 40, 49, 1);
+    border: solid 1px red;
+}
+
+.home .footer_wrap .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    height: 780px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+    color: rgb(255, 255, 255, 1);
+}
+
+.footer_wrap .footer_info h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 130px;
+    margin-bottom: 45px;
+}
+
+.footer_wrap .footer_info{
+    text-align: left;
+}
+
+.footer_wrap .footer_info p{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.footer_wrap .footer_info li{
+    margin-bottom: 30px;
+}
+
+.footer_wrap .footer_info a{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.footer_wrap .footer_info.info_2 a:hover,
+.footer_wrap .footer_info.info_3 a:hover{
+    color: rgb(255, 255, 255, 1);
+    transition-duration: .5s;
+}
+
+.footer_wrap .footer_info{
+    flex-basis: 20%;
+}
+
+.footer_info .social{
+    width: 165px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+}
+
+.footer_info .social .soc_img.img_1{/*СДЕЛАТЬ КРУГЛЫЙ ДИВ*/
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/social_sprite.PNG);
+    background-repeat: no-repeat;
+}
+
+.footer_info .social .soc_img.img_2{/*СДЕЛАТЬ КРУГЛЫЙ ДИВ*/
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/social_sprite.PNG);
+    background-position: -56px 0px;
+    background-repeat: no-repeat;
+}
+
+.footer_info .social .soc_img.img_3{/*СДЕЛАТЬ КРУГЛЫЙ ДИВ*/
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/social_sprite.PNG);
+    background-position: -111px 0px;
+    background-repeat: no-repeat;
+}
+
+.footer_info.info_4 .icon{
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+.footer_info.info_4 .adress{/*ВОЗМОЖНО НУЖЕН ТЕГ АДРЕС?*/
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+.footer_info.info_4 .text{
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.footer_info.info_4 .text a{
+    color: rgb(255, 255, 255, 1);
+}
+
+.footer_wrap .content p{
+   flex-basis: 100%;
+   font-size: 18px;
+   font-weight: 300;
+   color: rgb(255, 255, 255, 0.7);
+}
+
+.footer_wrap .content .icon_heart::before{
+    content: url(../images/icon_heart.png);
+}
+
+.footer_wrap .content p span:hover{
+   color: rgb(255, 255, 255, 1);
+   transition-duration: .5s;
+}
+
+/*-------------------------ФУТЕР КОНЕЦ-------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

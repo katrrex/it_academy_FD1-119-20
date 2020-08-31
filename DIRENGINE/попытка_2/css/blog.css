@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+p{
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+/*-------------------------ХЕДЕР НАЧАЛО--------------------------------*/
+
+.blog .header_wrap{
+    height: 720px;
+    background: url(../images/bg_5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid 1px red;
+}
+
+.blog .header_wrap .content{
+    height: 720px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+/*----ЭТО ЛОГОТИП НАВ КНОПКА НАЧАЛО----*/
+
+/*от флекса уплывает вниз контент*/
+header .logo_nav_btn{/*будет на каждой странице*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+header .logo_nav_btn span a{/*будет на каждой странице*/
+    font-size: 22px;
+    font-weight: 800;
+    color: rgb(255, 255, 255, 1);
+}
+
+header .nav_btn{/*будет на каждой странице*/
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav_btn ul{/*будет на каждой странице*/
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav_btn ul li a{/*будет на каждой странице*/
+    font-size: 16px;
+    color: rgb(255, 255, 255, 1);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+header .nav_btn ul li:nth-child(5) a{/*будет на каждой странице но другой чилд*/
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.6);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+header .nav_btn ul li:nth-child(5) a:hover{/*будет на каждой странице но другой чилд*/
+    color: rgb(255, 255, 255, 1);
+    transition-duration: .5s;
+}
+
+/*нужно подвинуть эту кнопку*/
+.logo_nav_btn button{/*будет на каждой странице*/
+    height: 50px;
+    width: 140px;
+    background: none;
+    border: solid 1px rgb(255, 255, 255, 0.6);
+    border-radius: 25px;
+    outline: none;
+}
+
+.logo_nav_btn button:hover{/*будет на каждой странице*/
+    height: 50px;
+    width: 140px;
+    background: rgb(248, 89, 89, 1);
+    border: solid 1px rgb(248, 89, 89, 1);
+    border-radius: 25px;
+    outline: none;
+    transition-duration: .5s;
+}
+
+.logo_nav_btn button span a{/*будет на каждой странице*/
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(255, 255, 255, 1);
+}
+
+/*----ЭТО ЛОГОТИП НАВ КНОПКА КОНЕЦ----*/
+
+/*----ЭТО ХЕДИНГ НАЧАЛО----*/
+
+.header_wrap .heading{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 230px;
+}
+
+.heading p:nth-child(1){
+    flex-basis: 49%;
+    font-size: 15px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.heading p:nth-child(1) a{
+    color: rgb(255, 255, 255, 1);
+}
+
+.heading p:nth-child(2){
+    flex-basis: 49%;
+    font-size: 15px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.heading p:nth-child(2) a{
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.heading h1{
+    flex-basis: 100%;
+    font-size: 60px;
+    line-height: 49px;
+    color: rgb(255, 255, 255, 1);
+    text-align: center;
+    margin-top: 32px;
+}
+
+/*----ЭТО ХЕДИНГ КОНЕЦ----*/
+
+/*-------------------------ХЕДЕР КОНЕЦ--------------------------------*/
+
+/*-------------------------МЭИН НАЧАЛО--------------------------------*/
+
+/*-------------------------МЭИН АЙТЕМС НАЧАЛО--------------------------*/
+
+.blog .main_items_wrap{
+    height: 1400px;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 1px red;
+}
+
+.blog .main_items_wrap .content{
+    height: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+}
+
+/*-------------------------МЭИН АЙТЕМС КОНЕЦ--------------------------*/
+
+/*-------------------------МЭИН КОНЕЦ--------------------------------*/
+
+/*-------------------------ФУТЕР НАЧАЛО------------------------------*/
+
+.blog .footer_wrap{
+    height: 780px; 
+    background-color: rgb(34, 40, 49, 1);
+    border: solid 1px red;
+}
+
+.blog .footer_wrap .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    height: 780px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 0, 0.267);
+    color: rgb(255, 255, 255, 1);
+}
+
+.footer_wrap .footer_info h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 130px;
+    margin-bottom: 45px;
+}
+
+.footer_wrap .footer_info{
+    text-align: left;
+}
+
+.footer_wrap .footer_info p{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.footer_wrap .footer_info li{
+    margin-bottom: 30px;
+}
+
+.footer_wrap .footer_info a{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.footer_wrap .footer_info.info_2 a:hover,
+.footer_wrap .footer_info.info_3 a:hover{
+    color: rgb(255, 255, 255, 1);
+    transition-duration: .5s;
+}
+
+.footer_wrap .footer_info{
+    flex-basis: 20%;
+}
+
+.footer_info .social{
+    width: 165px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+}
+
+.footer_info .social .soc_img.img_1{/*СДЕЛАТЬ КРУГЛЫЙ ДИВ*/
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/social_sprite.PNG);
+    background-repeat: no-repeat;
+}
+
+.footer_info .social .soc_img.img_2{/*СДЕЛАТЬ КРУГЛЫЙ ДИВ*/
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/social_sprite.PNG);
+    background-position: -56px 0px;
+    background-repeat: no-repeat;
+}
+
+.footer_info .social .soc_img.img_3{/*СДЕЛАТЬ КРУГЛЫЙ ДИВ*/
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/social_sprite.PNG);
+    background-position: -111px 0px;
+    background-repeat: no-repeat;
+}
+
+.footer_info.info_4 .icon{
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+.footer_info.info_4 .adress{/*ВОЗМОЖНО НУЖЕН ТЕГ АДРЕС?*/
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+.footer_info.info_4 .text{
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.footer_info.info_4 .text a{
+    color: rgb(255, 255, 255, 1);
+}
+
+.footer_wrap .content p{
+   flex-basis: 100%;
+   font-size: 18px;
+   font-weight: 300;
+   color: rgb(255, 255, 255, 0.7);
+}
+
+.footer_wrap .content .icon_heart::before{
+    content: url(../images/icon_heart.png);
+}
+
+.footer_wrap .content p span:hover{
+   color: rgb(255, 255, 255, 1);
+   transition-duration: .5s;
+}
+
+/*-------------------------ФУТЕР КОНЕЦ-------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

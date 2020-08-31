@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+p{
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+header{
+    height: 720px;
+    background: url(../images/bg_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header_content{
+    height: 720px;
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px red;
+}
+
+.box_logo_nav{
+    display: flex;    
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.logo a{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 255, 255, 1);
+}
+
+.nav_menu{
+    display: flex;    
+    justify-content: space-between;
+}
+
+.header_nav{
+    display: flex;    
+    justify-content: space-between;
+}
+
+.nav_menu ul li a{
+    font-size: 16px;
+    color: rgb(255, 255, 255, 1);
+    padding: 0px 50px 0px 50px;
+}
+
+.nav_menu ul li:nth-child(1) a{
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.nav_menu ul li:nth-child(1) a:hover{
+    color: rgb(255, 255, 255, 1);
+    transition-duration: .5s;
+}
+
+.nav_menu button{ /*кнопка находится чуть ниже, как поднять?*/
+    width: 110px;
+    height: 50px;
+    border:solid 1px rgba(255, 255, 255, 0.5 );
+    border-radius: 30px;
+    background: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav_menu button:hover{
+    background-color: rgba(249, 88, 88, 1);
+    transition-duration: .2s;
+}
+
+.header_content h1{
+    font-size: 60px;
+    line-height: 72px;
+    color: rgb(255, 255, 255, 1);
+    margin-top: 50px;
+}
+
+.header_content h1 span{
+    font-weight: 400;
+}
+
+.header_content form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header_content form label{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.header_content form label:first-child span{
+    color: rgb(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+}
+
+.header_content form [type="text"]{
+    flex-basis: 30%;
+    height: 70px;
+    border: none;
+    padding-left: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.header_content form select{
+    flex-basis: 30%;
+    height: 70px;
+    border: none;
+    border-left: solid 1px rgba(223, 224, 230, 1);
+    padding-left: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.header_content form [type="button"]{
+    flex-basis: 12%;
+    height: 70px;
+    background-color: rgba(249, 88, 88, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.header_content form span{
+    flex-basis: 100%;
+    opacity: 0.8;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.hered_find_span{
+    color: rgb(255, 255, 255, 0.9);
+}
+
+.header_find_btn{
+    border: solid 1px red;
+    margin-top: 30px;
+}
+
+.header_find_btn span{
+    font-size: 18px;
+    color: rgb(0, 0, 0, 0.8);
+    margin-left: 35px;
+}
+
+.header_find_btn button:nth-child(1){ /*стиль кнопки 1*/
+    height: 50px;
+    width: 170px;
+    background: url(../images/fbi_001.png) no-repeat center left rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+}
+
+/*кнопки которые не ховерятся*/
+
+.header_find_btn button:nth-child(1):hover{ /*ховер кнопки 1*/
+    background: url(../images/fbi_h_001.png) no-repeat center left rgba(249, 88, 88, 1);
+}
+
+.header_find_btn button:nth-child(1):hover + .header_find_btn span{ /*не работает*/
+    color: rgb(255, 255, 255, 1);
+}
+
+.header_find_btn button:nth-child(2){ /*стиль кнопки 2*/
+    height: 50px;
+    width: 170px;
+    background: url(../images/fbi_002.png) no-repeat center left rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+}
+
+.header_find_btn button:nth-child(2):hover{ /*ховер кнопки 2*/
+    background: url(../images/fbi_h_002.png) no-repeat center left rgba(249, 88, 88, 1);
+}
+
+.header_find_btn button:nth-child(3){ /*стиль кнопки 3*/
+    height: 50px;
+    width: 170px;
+    background: url(../images/fbi_003.png) no-repeat center left rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+}
+
+.header_find_btn button:nth-child(3):hover{ /*ховер кнопки 3*/
+    background: url(../images/fbi_h_003.png) no-repeat center left rgba(249, 88, 88, 1);
+}
+
+.header_find_btn button:nth-child(4){ /*стиль кнопки 4*/
+    height: 50px;
+    width: 170px;
+    background: url(../images/fbi_004.png) no-repeat center left rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+}
+
+.header_find_btn button:nth-child(4):hover{ /*ховер кнопки 4*/
+    background: url(../images/fbi_h_004.png) no-repeat center left rgba(249, 88, 88, 1);
+}
+
+/*------------------------*/
+
+/*секция с карточками*/
+
+.section_first{
+    height: 400px;
+    color: rgb(36, 68, 231); /*не присваивается*/
+}
+
+.section_first_content{
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px red;
+}
+
+.section_box{ /*бокс для карточек*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+}
+
+.section_first_content .box_item h3{/*заголовок каждой карточки*/
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 30px;
+    color: rgb(77, 77, 77, 1);
+}
+
+.section_first_content .box_item p{/*парагнаф каждой карточки*/
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: justify;
+    color: rgb(77, 77, 77, 1)
+}
+
+.section_box .box_item:nth-child(1){/*карточка 1*/
+    background: url(../images/bi_001.png) no-repeat center top rgba(255, 255, 255, 1);
+    width: 16%;
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);  
+} 
+
+.section_box .box_item:nth-child(1):hover{/*ховер карточка 1*/
+    background: url(../images/bi_h_001.png) no-repeat center top rgba(249, 88, 88, 1);
+} 
+
+.section_box .box_item:nth-child(1):hover + .section_first_content .box_item h3{ /* ховер парагнаф 1 карточки не работает*/
+    color: rgb(255, 255, 255, 1);
+}
+
+.section_box .box_item:nth-child(2){/*карточка 2*/
+    background: url(../images/bi_002.png) no-repeat center top rgba(255, 255, 255, 1);
+    width: 16%;
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);  
+} 
+
+.section_box .box_item:nth-child(2):hover{/*ховер карточка 2*/
+    background: url(../images/bi_h_002.png) no-repeat center top rgba(249, 88, 88, 1);
+} 
+
+.section_box .box_item:nth-child(3){/*карточка 3*/
+    background: url(../images/bi_003.png) no-repeat center top rgba(255, 255, 255, 1);
+    width: 16%;
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);  
+} 
+
+.section_box .box_item:nth-child(3):hover{/*ховер карточка 3*/
+    background: url(../images/bi_h_003.png) no-repeat center top rgba(249, 88, 88, 1);
+} 
+
+.section_box .box_item:nth-child(4){/*карточка 4*/
+    background: url(../images/bi_004.png) no-repeat center top rgba(255, 255, 255, 1);
+    width: 16%;
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);  
+} 
+
+.section_box .box_item:nth-child(4):hover{/*ховер карточка 4*/
+    background: url(../images/bi_h_004.png) no-repeat center top rgba(249, 88, 88, 1);
+} 
+
+/*секция фьючерс*/
+
+main .features{
+    height: 880px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.section_features_content{
+    height: 880px;
+    width: 85%;
+    margin: 0 auto;
+    color: rgb(77, 77, 77,1);
+}
+
+.section_features_content .name_feature,
+.main_offers_content .name_offer,
+.main_info_about_content .name_info_about{
+    display: inline-block;
+    margin-top: 90px;
+    font-size: 15px;
+}
+
+.section_features_content h2,
+.main_offers_content h2,
+.main_info_about_content h2{
+    margin-top: 30px;
+}
+
+.section_features_content h2 span{
+    font-weight: 300;
+}
+
+.features_items{
+    display: flex;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-left: -17px;
+}
+
+.feature_item{
+    margin: 0px 16px 0px 16px;
+    border: solid 2px rgba(249, 250, 255, 1);
+}
+
+.layer_magnifier{
+    position: relative;
+}
+
+.layer_magnifier a{
+    text-decoration: none;
+}
+
+.feature_img{
+    height: 315px;
+    width: 255px;
+} 
+
+.layer_magnifier .magnifier{
+    display: none;
+    position: absolute;
+    left: 39%;
+    bottom: 39%;
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    background: url(../images/magnifer.png) no-repeat center center rgba(255, 255, 255, 1);
+    border-radius: 32px;
+}
+
+.layer_magnifier:hover .magnifier{
+    display: block;
+}
+
+.feature_img.img_1,
+.offer_img.img_1{
+    background-image: url(../images/destination-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.feature_img.img_2,
+.offer_img.img_2{
+    background-image: url(../images/destination-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.feature_img.img_3,
+.offer_img.img_3{
+    background-image: url(../images/destination-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.feature_img.img_4,
+.offer_img.img_4{
+    background-image: url(../images/destination-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.feature_img.img_5,
+.offer_img.img_5{
+    background-image: url(../images/destination-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.feature_img.img_6,
+.offer_img.img_6{
+    background-image: url(../images/destination-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.feature_item h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 20px 20px 20px;
+    text-align: left;
+}
+
+.feature_item h3 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0, 1);
+}
+
+.feature_item p{
+    font-size: 15px;
+    margin: 20px 20px 20px 20px;
+    text-align: left;
+    color: rgb(77, 77, 77, 0.7);
+}
+
+
+
+

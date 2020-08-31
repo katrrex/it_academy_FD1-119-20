@@ -20,7 +20,7 @@ body{
 .header_section_first_content{
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ nav{
 
 .logo_and_nav ul li:nth-child(1) a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 1);
     opacity: 0.6;
 }
@@ -66,7 +66,7 @@ nav{
 
 .logo_and_nav ul li a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -76,7 +76,7 @@ nav{
     border:solid 1px rgba(255, 255, 255, 0.5 );
     border-radius: 30px;
     background: none;
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -121,6 +121,7 @@ header form [type="text"]{
     border: none;
     padding-left: 30px;
     outline: none;
+    font-size: 16px;
 }
 
 header form select{
@@ -130,6 +131,7 @@ header form select{
     border-left: solid 1px rgba(223, 224, 230, 1);
     padding-left: 30px;
     outline: none;
+    font-size: 16px;
 }
 
 header form [type="button"]{
@@ -138,12 +140,14 @@ header form [type="button"]{
     background-color: rgba(249, 88, 88, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
+    outline: none;
+    font-size: 16px;
 }
 
 header form span{
     flex-basis: 100%;
     opacity: 0.8;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 20px;
 }
 
@@ -154,14 +158,29 @@ header form span{
     justify-content: space-between;
 }
 
+
 form button{
-    background-color: rgba(255, 255, 255, 1);
     padding: 10px;
+    padding-left: 70px;
+    background: url(../images/fbi_001.png) no-repeat left center rgba(255, 255, 255, 1);
     flex-basis: 10%;
     justify-content: space-around;
     border: none;
 }
 
+form button:hover{
+    background: url(../images/fbi_h_001.png) no-repeat left center rgb(255, 138, 138);
+    background-size: 30px 30px;
+    
+}
+
+чилд
+
+
+
+
+
+/*
 form:last-child button:hover{
     background-color: rgba(249, 88, 88, 1);
     transition-duration: .2s;
@@ -173,8 +192,13 @@ form:last-child button span{
 }
 
 form:last-child button:nth-child(1) span::before{
-   content: "#";
+   content: url(../images/fbi_001.png);
 }
+
+form:last-child button:hover + form:last-child button:nth-child(1) span::before{
+    content: url(../images/fbi_h_001.png);
+ }
+
 
 form:last-child button:nth-child(2) span::before{
     content: "#";
@@ -186,7 +210,7 @@ form:last-child button:nth-child(2) span::before{
 
 form:last-child button:nth-child(4) span::before{
     content: "#";
-}
+}*/
 
 .header_section_second{
     height: 400px;
@@ -197,7 +221,7 @@ form:last-child button:nth-child(4) span::before{
     display: flex;
     flex-wrap: wrap;
     height: 400px;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -227,10 +251,32 @@ form:last-child button:nth-child(4) span::before{
     text-align: center;
     margin-bottom: 20px;
     color: rgba(249, 89, 89, 1);
+    margin: 0 auto;
 }
 
+.header_item:nth-child(1) span::after{
+    border: solid 1px blue;
+    content: url(../images/icons_001.png);
+    margin-left: 55px;
+}
+
+.header_item:hover + .header_item:nth-child(1) span::after{
+    content: url(../images/icons_h_001.png);
+}
+
+
+
+
+/*.header_item:hover + .header_item:nth-child(1) span:hover::after{
+    content: url(../images/icons_h_001.png);
+}*/
+
+
+
+
+
 .header_item h3{
-    color: rgba(62, 62, 62, 1);
+    color: rgb(77, 77, 77, 1);
     text-align: center;
     font-size: 19px;
     font-weight: 500;
@@ -238,18 +284,22 @@ form:last-child button:nth-child(4) span::before{
     margin-bottom: 18px;
 } 
 
-.header_item:hover .item_icon:hover .header_item h3{
+.header_item:hover + .item_icon .header_item h3{ /* не работует*/
     color: rgba(255, 255, 255, 1);
 }
 
 .header_item p{
-    color: rgba(62, 62, 62, 1);
+    color: rgb(77, 77, 77, 1);
     text-align: center;
     font-size: 16px;
     font-weight: 300;
     line-height: normal;
     text-justify: distribute;
     text-align: justify;
+}
+
+.header_item:hover + .item_icon .header_item p{ /* не работует*/
+    color: rgba(255, 255, 255, 1);
 }
 
 main .features{
@@ -259,18 +309,22 @@ main .features{
 
 .main_features_content{
     height: 880px;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
-    color: rgba(62, 62, 62, 1);
+    color: rgb(77, 77, 77,1);
 }
 
 .main_features_content .name_feature,
-.main_offers_content .name_offer{
+.main_offers_content .name_offer,
+.main_info_about_content .name_info_about{
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 90px;
+    font-size: 15px;
 }
 
-.main_features_content h2{
+.main_features_content h2,
+.main_offers_content h2,
+.main_info_about_content h2{
     margin-top: 30px;
 }
 
@@ -282,10 +336,11 @@ main .features{
     display: flex;
     overflow: hidden;
     margin-top: 100px;
+    margin-left: -17px;
 }
 
 .feature_item{
-    margin-right: 30px;
+    margin: 0px 16px 0px 16px;
     border: solid 2px rgba(249, 250, 255, 1);
 }
 
@@ -375,13 +430,14 @@ main .features{
 
 .feature_item h3 a{
     text-decoration: none;
-    color: rgba(62, 62, 62, 1);
+    color: rgb(0, 0, 0, 1);
 }
 
 .feature_item p{
     font-size: 15px;
     margin: 20px 20px 20px 20px;
     text-align: left;
+    color: rgb(77, 77, 77, 0.7);
 }
 
 main .circle_buttons{
@@ -401,13 +457,9 @@ main .offers{
 
 .main_offers_content{
     height: 880px;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     color: rgba(62, 62, 62, 1);
-}
-
-.main_offers_content h2{
-    margin-top: 30px;
 }
 
 .main_offers_content h2 span{
@@ -416,13 +468,12 @@ main .offers{
 }
 
 .offers_items{
-    margin: 100px 0px 0px -130px;
+    margin-top: 100px;
     display: flex;
     border: solid 1px red;
 }
 
 .offer_item{
-    background-color: rgba(128, 255, 0, 0.226);
     margin-right: 16px;
     margin-left: 16px;
 }
@@ -435,16 +486,15 @@ main .offers{
     flex: 1;
     flex-basis: 100%;
     height: 200px;
-    width: 255px;
 }
 
 .offer_content{
     border: solid 1px #e6e6e6;
+    background-color: rgb(255, 255, 255, 1);
 }
 
 .offer_content .text_line_1{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 15px 15px 15px;
 }
@@ -501,19 +551,15 @@ main .offers{
 
 .offer_content .text_line_3{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0px 15px 15px 15px;
 }
 
 .text_line_3 .img_map{
-    display: inline;
-}   
-
-.text_line_3 span:nth-child(2){
+    display: inline-block;
     font-size: 15px;
-    background-color: rgba(249, 89, 89, 1);
-}
+    padding-top: 5px;
+}   
 
 .text_line_3 button{
     width: 70px;
@@ -535,54 +581,676 @@ main .offers{
     background-position: center;
 }
 
-.facts_content{
-    display: flex;
-    flex-wrap: wrap;
+.main_facts_content,
+.main_subcribe_content{
     height: 535px;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
-    border: solid 1px crimson;
-}
-
-.facts_content h2{
-    flex-basis: 100%;
-    font-size: 35px;
-    font-weight: 300;
-    margin-top: 145px;
     text-align: center;
-    border: solid 1px crimson;
 }
 
-.facts_content span{
-    flex-basis: 100%;
+.main_facts_content h2,
+.main_subcribe_content h2{
+    display: inline-block;
+    font-size: 42px;
+    font-weight: 400;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.main_facts_content span,
+.main_subcribe_content span{
+    display: block;
     font-size: 14px;
+    color: rgb(255, 255, 255, 0.8);
+    line-height: normal;
     text-align: center;
-    margin-top: 20px;
-    border: solid 1px crimson;
+    margin-top: 40px;
 }
 
 .fact_block{
     display: flex;
-    flex-basis: 100%;
-    border: solid 1px crimson;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
 }
 
-.fact{
+.fact_block .fact h2{
+    margin-top: 0;
+}
+
+.fact_block .fact span{
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+/*---------------------------------------------------------*/
+.cost{
+    border: solid 1px red;
+}
+
+main .of_second{
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.of_second .text_line_1 span{
+    border: solid 1px red;
+}
+
+.of_second small{
+    font-size: 14px;
+    border: solid 1px red;
+}
+
+.of_second .offer_img.img_1{
+    background-image: url(../images/hotel-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.of_second .offer_img.img_2{
+    background-image: url(../images/hotel-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.of_second .offer_img.img_3{
+    background-image: url(../images/hotel-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.of_second .offer_img.img_4{
+    background-image: url(../images/hotel-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.of_second .offer_img.img_5{
+    background-image: url(../images/hotel-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main .info_about{
+    height: 535px;
+    background-color: rgba(249, 250, 255, 1);
+}
+
+.main_info_about_content{
+    display: flex;
+    height: 535px;
+    width: 85%;
+    margin: 0 auto;
+    color: rgba(62, 62, 62, 1);
+    justify-content: space-between;
+}
+
+.box_left{
+    flex-basis: 49%;
+}
+
+.box_right{
+    flex-basis: 49%;
+}
+
+.main_info_about_content p{
+    font-size: 15px;
+    line-height: normal;
+}
+
+.main_info_about_content h2 span{
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.main_info_about_content p:nth-child(3){
+    margin-top: 50px;
+}
+
+.main_info_about_content p:nth-child(4){
+    margin-top: 30px;
+}
+
+.main_info_about_btn{
+    width: 135px;
+    height: 55px;
+    border: solid 1px  rgba(249, 89, 89, 1);
+    border-radius: 30px;
+    background: none;
+    font-size: 14px;
+    color:  rgba(249, 89, 89, 1);
+    margin-top: 45px;
+}
+
+.main_info_about_btn span{
+    font-size: 16px;
+}
+
+.slider{
+    display: flex;
+    overflow: hidden;
+    width: 577px;
+    margin-top: 40px;
+    border: solid 1px  rgba(249, 89, 89, 1);
+}
+
+.slider-box{
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.slider_content{
+    display: inline-block;
+    width: 495px;
+    margin: 33px 45px 33px 33px;
+}
+
+.box_imgs{
+    float: left;
+}
+
+.person_img{
+    position: relative;
+    height: 95px;
+    border-radius: 48px;
+}
+
+.brecket_img{
+    position: absolute;
+    height: 40px;
+    top: 4580px;
+    left: 845px;
+    border-radius: 20px;
+}
+
+.box_text{
+    margin-left: 25%;
+}
+
+.box_text span:nth-child(2){
+    display: block;
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.box_text span:nth-child(3){
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.offers.of_third{
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.offers.of_third .offers_items,
+.offers.of_fourth .offers_items{
+    overflow: hidden;
+    margin: 0px;
+    margin-top: 100px;
+    margin-left: -15px;
+}
+
+
+.offers.of_third .offers_items .offer_item,
+.offers.of_fourth .offers_items .offer_item{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.offers.of_third .offer_img.img_1{
+    background: url(../images/restaurant-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offers.of_third .offer_img.img_2{
+    background: url(../images/restaurant-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offers.of_third .offer_img.img_3{
+    background: url(../images/restaurant-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offers.of_third .offer_img.img_4{
+    background: url(../images/restaurant-4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offers.of_fourth .offers_items .offer_content{
+    height: 330px;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.offers.of_fourth .offer_img.img_1{
+    background: url(../images/image_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offers.of_fourth .offer_img.img_2{
+    background: url(../images/image_2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offers.of_fourth .offer_img.img_3{
+    background: url(../images/image_3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offers.of_fourth .offer_img.img_4{
+    background: url(../images/image_4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offers.of_fourth .offer_item .text_line_1{
+    margin: 30px 25px 0px 25px;
+
+}
+
+.offers.of_fourth .offer_item .text_line_1 span{
+    font-size: 15px;
+    color: rgb(179, 179, 179, 1);
+}
+
+.offers.of_fourth .offer_item .text_line_2{
+    margin: 25px 25px 0px 25px;
+}
+
+.offers.of_fourth .offer_item .text_line_2 p{
+    font-size: 20px;
+    margin: 0px;
+}
+
+.offers.of_fourth .offer_item .text_line_2 a{
+    text-decoration: none;
+    color: rgba(62, 62, 62, 1);
+}
+
+.offers.of_fourth .offer_item .text_line_2 a:hover{
+    text-decoration: none;
+    color: rgba(249, 89, 89, 1);
+    transition-duration: .4s;
+}
+
+.offers.of_fourth .offer_item .text_line_3{
+    margin: 30px 25px 0px 25px;
+}
+
+.offers.of_fourth .offer_item .text_line_3 span,
+.offers.of_fourth .offer_item .text_line_4 span{
+    font-size: 15px;
+}
+
+.offers.of_fourth .offer_item .text_line_3 a,
+.offers.of_fourth .offer_item .text_line_4 a{
+    text-decoration: none;
+    color: rgb(179, 179, 179, 1);
+}
+
+.offers.of_fourth .offer_item .text_line_4{
+    margin: 15px 25px 55px 25px;
+}
+
+main .subcribe{
+    height: 535px;
+    background: linear-gradient(to bottom right,rgb(46, 189, 196,1 ), rgb(104, 229, 178, 1));
+}
+
+.subcribe .email{
+    margin-top: 50px;
+}
+
+main .subcribe form{
+    margin-top: 50px;
+    text-align: center;
+}
+
+main .subcribe form [type="email"]{
+    height: 50px;
+    font-size: 20px;
+    background: none;
+    border: 1px solid rgb(255, 255, 255, 0.6);
+    color:rgb(255, 255, 255, 0.6);
+    padding-left: 30px;
+    outline: none;
+}
+
+main .subcribe form [type="button"]{
+    height: 52px;
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    border: 1px solid rgb(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 1);
+    padding: 15px;
+    margin-left: -6px;
+    outline: none;
+}
+
+footer{
+    height: 650px;
+    background: rgb(34, 40, 49);
+}
+
+.footer_content{
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 20%;
     justify-content: space-between;
-    border: solid 1px crimson;
+    margin: 0 auto;
 }
 
-.fact h2{
-    flex-basis: 100%;
-    border: solid 1px crimson;
+.footer_info{
+    flex: 1;
+    flex-basis: 24%;
+    margin-top: 130px;
 }
 
-.fact span{
+.footer_content p{
     flex-basis: 100%;
     font-size: 16px;
-    font-weight: 200;
-    border: solid 1px crimson;
+    color: rgb(255, 255, 255, 0.7);
+    border: solid 1px green;
+}
+
+.footer_content p:nth-child(5){
+    border: solid 1px blue;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.footer_info h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.footer_info:nth-child(2) h3,
+.footer_info:nth-child(3) h3{
+    margin-bottom: 60px;
+}
+
+.footer_info p{
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.7);
+    line-height: normal;
+}
+
+.footer_info ul{
+    list-style-type: none;
+}
+
+.footer_info ul li{
+    margin-top: 30px;
+}
+
+.footer_info ul a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.footer_info ul a:hover{
+    color: rgb(255, 255, 255, 1);
+    transition-duration: .6s;
+}
+
+.footer_info:nth-child(4){
+    border: solid 1px red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_info:nth-child(4) h3{
+    flex-basis: 100%;
+    margin-bottom: 0;
+    border: solid 1px red;
+}
+
+.footer_info:nth-child(4) .icon{
+    flex-basis: 10%;
+    height: 50px;
+    border: solid 1px red;
+}
+
+.footer_info:nth-child(4) .text{
+    flex-basis: 80%;
+    border: solid 1px red;
+}
+
+.footer_info:nth-child(4) address{
+    flex-basis: 80%;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: rgb(255, 255, 255, 0.7);
+    border: solid 1px red;
+}
+
+.footer_info:nth-child(4) a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+/*--------PAGE ABOUT---------*/
+
+/*header*/
+
+.body_about header{
+    height: 700px;
+    background: url(../images/bg_2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body_about .header_content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.body_about .logo_and_nav ul li:nth-child(1) a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+
+.body_about .logo_and_nav ul li:nth-child(2) a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+}
+
+.body_about .logo_and_nav ul li:nth-child(2):hover a{
+    opacity: 1;
+    transition-duration: .4s;
+}
+
+.body_about .header_content span:nth-child(2){
+    flex-basis: 49%;
+    text-align: right;
+    font-size: 15px;
+    margin-top: 200px;
+    margin-right: 10px;
+}
+
+.body_about .header_content span:nth-child(2) a{
+    text-decoration: none;
+    color: rgb(255, 255, 255, 1);
+}
+
+.body_about .header_content span:nth-child(3){
+    flex-basis: 49%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 200px;
+    color: rgb(255, 255, 255, 0.6);
+    margin-left: 10px;
+}
+
+.body_about .header_content h1{
+    text-align: center;
+    margin-top: 35px;
+}
+
+/*main*/
+
+.body_about main{
+    height: 600px;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.body_about .main_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.body_about main img{
+    flex-basis: 48%;
+    height: 420px;
+    width: 620px;
+    margin-top: 100px;
+    margin-bottom: 85px;
+    border: solid 1px red;
+}
+
+.body_about main .box_text_about{
+    flex-basis: 48%;
+    margin-top: 100px;
+    margin-bottom: 85px;
+    border: solid 1px red;
+    overflow: hidden; /*потом удалить*/
+}
+
+.body_about main .box_text_about a{
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.body_about main .box_text_about a:nth-child(1) button{
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+    background-color: rgb(120, 213, 239, 1);
+    color: rgb(255, 255, 255, 1);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.body_about main .box_text_about a:nth-child(2) button{
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255, 1);
+    color: rgb(179, 179, 179, 1);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.body_about main .box_text_about a:nth-child(2) button:hover,
+.body_about main .box_text_about a:nth-child(3) button:hover{
+    color: rgb(0, 0, 0, 1);
+    transition-duration: .5s;
+}
+
+.body_about main .box_text_about a:nth-child(3) button{
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255, 1);
+    color: rgb(179, 179, 179, 1);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.body_about main .box_text_about a:nth-child(2) button:hover:active,
+.body_about main .box_text_about a:nth-child(3) button:hover:active{
+    background-color: rgb(255, 255, 255, 1);
+    color: rgb(179, 179, 179, 1);
+} /*при нажатии должен меняться цвет 
+кнопки и текста кнопки и появляться снизу другой текст*/
+
+.body_about main .box_text_about h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(0, 0, 0, 1);
+    margin-top: 55px;
+}
+
+.body_about main .box_text_about p{
+    font-size: 15px;
+    line-height: normal;
+    color: rgb(77, 77, 77, 0.7);
+    margin-top: 35px;
+}
+
+.body_about main .main_section_second{
+    height: 700px;
+    background-color: rgba(249, 250, 255, 1);
+}
+
+.body_about main .main_section_second .main_content{
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    color: rgb(77, 77, 77,1);
+}
+
+.main_content .box_faqs{
+    flex-basis: 100%;
+}
+
+.main_section_second .main_content .name_faqs{
+    margin-top: 90px;
+    font-size: 15px;
+    border: solid 1px red;
+}
+
+.main_section_second .main_content h2{
+    margin-top: 30px;
+    border: solid 1px red;
+
+}
+
+.main_section_second .main_content h2 span{
+    font-weight: 300;
+    border: solid 1px red;
+
+}
+
+.box_text_faqs{
+    flex-basis: 48%;
+
+
+    border: solid 1px red;
+
 }
